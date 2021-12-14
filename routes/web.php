@@ -22,7 +22,7 @@ Route::get('/clear',function(){
     Artisan::call('config:cache');
     dd("cache cleared");
 });
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
@@ -85,6 +85,10 @@ Route::group([
     Route::get('users/delete/{id}',  [UsersController::class,'destroy'])->name('user-delete');
     Route::post('delete-selected-users',  [UsersController::class,'DeleteSelectedUsers'])->name('delete-selected-users');
     Route::get('edit-profile/{id}',  [UsersController::class,'show'])->name('edit-profile');
+    Route::post('users/deposit/{id}', [UsersController::class,'updateDeposit'])->name('admin-deposit');
+    Route::post('users/payout/{id}', [UsersController::class,'updatePayouts'])->name('admin-payout');
+    Route::post('users/refferal/{id}', [UsersController::class,'updateRefferal'])->name('admin-refferal');
+    Route::post('users/interest/{id}', [UsersController::class,'updateInterest'])->name('admin-interest');
 
 
     //User Routes

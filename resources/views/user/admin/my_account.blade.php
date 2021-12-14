@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="16x16"
           href="@isset($setting['favicon']) {{ asset('images/'.$setting['favicon']) }}@endisset">
     <title>@isset($setting['site_title']) {{ $setting['site_title'] }}@endisset</title>
-    
+
     <!--Template style -->
     <link rel="stylesheet" type="text/css" href={{ asset('css/new/animate.css')}} />
     <link rel="stylesheet" type="text/css" href={{ asset('css/new/bootstrap.min.css')}} />
@@ -55,7 +55,7 @@
                 <form class="cd-search">
                     <input type="search" placeholder="Search...">
                 </form>
-            </li> 
+            </li>
              <li class="has-children">
                 <a href="#">index</a>
                 <!--<ul class="cd-secondary-dropdown icon_menu is-hidden">-->
@@ -77,7 +77,7 @@
 					</li>
                     <li>
                       <a href="#">banners</a>
-					</li> 
+					</li>
 				   <li>
                       <a href="#ord.html">change password</a>
 					</li>
@@ -95,42 +95,42 @@
                   </li>
 					<li>
                       <a href="#">email notification</a>
-                  </li>   
+                  </li>
 					<li>
                       <a href="#">exchange history</a>
-                  </li>  
+                  </li>
 					<li>
 						<a href="#">exchange money</a>
-                  </li> 
+                  </li>
 					<li>
                       <a href="{{ route('deposit_fund') }}">make deposit</a>
-                  </li> 	
+                  </li>
 					<li>
                       <a href="#">my account</a>
-                  </li> 	
+                  </li>
 					<li>
                       <a href="#">payment request</a>
-                  </li> 	
+                  </li>
 					<li>
                       <a href="#">pending history</a>
-                  </li> 	
+                  </li>
 					<li>
                       <a href="#">referral earnings</a>
-                  </li> 	
+                  </li>
 					<li>
                       <a href="#">referrals</a>
-                  </li> 
+                  </li>
 					<li>
                       <a href="#">tickets</a>
-                  </li> 	
+                  </li>
 					<li>
                       <a href="#">transfer fund</a>
                   </li>
 				<li>
                       <a href="#">view profile</a>
-                  </li> 									
+                  </li>
               </ul>
-             </li>  
+             </li>
 				<li class="has-children">
                 <a href="#">blog</a>
                 <ul class="cd-secondary-dropdown icon_menu is-hidden">
@@ -138,8 +138,8 @@
                     <li><a href="#">blog category</a></li>
                     <li><a href="#">blog single</a></li>
                 </ul>
-			
-            </li>   
+
+            </li>
             <li><a href="#"> contact us </a></li>
             <li><a href="#"> login </a></li>
             <li><a href="#"> register </a></li>
@@ -157,7 +157,7 @@
             <!-- mobile menu area start -->
             <header class="mobail_menu d-block d-sm-block d-md-block d-lg-none d-xl-none">
                 <div class="container-fluid">
-                    <div class="row">				
+                    <div class="row">
                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="cd-dropdown-wrapper">
                                 <a class="house_toggle inner_toggle" href="#0">
@@ -331,11 +331,11 @@
                                 </li>
                                 <li><a href="{{ route('logout') }}"
                            onclick="event.preventDefault();document.getElementById('logout-form').submit();" ><i class="flaticon-turn-off"></i> Logout</a>
-                                
+
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                     @csrf
                                 </form>
-                                
+
                                 </li>
                             </ul>
                         </div>
@@ -344,7 +344,7 @@
 
             <div class="cp_navigation_wrapper main_top_wrapper dashboard_header">
                 <div class="mainmenu d-xl-block d-lg-block d-md-none d-sm-none d-none">
-                     <ul class="main_nav_ul">                                    
+                     <ul class="main_nav_ul">
 						<li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation active_class">index <i class="fas fa-caret-down"></i></a>
                             <ul class="navi_2_dropdown">
                                 <li class="parent">
@@ -355,11 +355,11 @@
                                 </li>
 								<li class="parent">
                                     <a href="#"><i class="fas fa-caret-right"></i>index III</a>
-                                </li> 								
+                                </li>
                             </ul>
-                        </li>     
+                        </li>
                         <li><a href="#" class="gc_main_navigation">about us</a></li>
-                        <li><a href="#" class="gc_main_navigation">investment plan</a></li>  
+                        <li><a href="#" class="gc_main_navigation">investment plan</a></li>
 						<li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">pages <i class="fas fa-caret-down"></i></a>
                             <ul class="navi_2_dropdown">
                                 <li class="parent">
@@ -367,15 +367,15 @@
                                 </li>
                                 <li class="parent">
                                     <a href="#"><i class="fas fa-caret-right"></i>login</a>
-                                </li>  
+                                </li>
 								<li class="parent">
                                     <a href="#"><i class="fas fa-caret-right"></i>register</a>
-                                </li>   								
+                                </li>
                             </ul>
                         </li>
 						<li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">dashboard <i class="fas fa-caret-down"></i></a>
                             <ul class="navi_2_dropdown">
-                              
+
                                 <li class="parent">
                                     <a href="#"><i class="fas fa-caret-right"></i>my account<span><i class="fas fa-caret-right"></i>
 									</span></a>
@@ -395,7 +395,7 @@
                                         <li>
                                             <a href="#"><i class="fas fa-caret-right"></i>change pin</a>
                                         </li>
-                                     
+
                                     </ul>
                                 </li>
                                 <li class="parent">
@@ -417,7 +417,7 @@
                                         <li>
                                             <a href="{{ route('deposit_fund') }}"><i class="fas fa-caret-right"></i>fund transfer</a>
                                         </li>
-                                     
+
                                     </ul>
                                 </li>
 								<li class="parent">
@@ -439,7 +439,7 @@
                                         <li>
                                             <a href="#"><i class="fas fa-caret-right"></i>earning history</a>
                                         </li>
-                                     
+
                                     </ul>
                                 </li>
 								<li class="parent">
@@ -455,14 +455,14 @@
                                         <li>
                                             <a href="#"><i class="fas fa-caret-right"></i>referral earnings</a>
                                         </li>
-                                      
+
                                     </ul>
                                 </li>
 								<li class="parent">
                                     <a href="#"><i class="fas fa-caret-right"></i>view tickets</a></li>
                             </ul>
-                        </li>						
-						    						
+                        </li>
+
                         <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">blog <i class="fas fa-caret-down"></i></a>
                             <ul class="navi_2_dropdown">
                                 <li class="parent">
@@ -470,9 +470,9 @@
                                 </li>
                                 <li class="parent">
                                     <a href="#"><i class="fas fa-caret-right"></i> blog single</a>
-                                </li>                   
+                                </li>
                             </ul>
-                        </li>     
+                        </li>
                         <li><a href="#" class="gc_main_navigation">contact us</a></li>
                     </ul>
                 </div>
@@ -516,7 +516,7 @@
                                     <li><a href="#"><i class="fa fa-circle"></i> my account</a>
                                     </li>
                                     <li><a href="#"><i class="fa fa-circle"></i> my profile</a>
-                                    </li>                      
+                                    </li>
                                     <li><a href="#"><i class="fa fa-circle"></i>email notification</a>
                                     </li>
                                     <li><a href="#"><i class="fa fa-circle"></i>change password</a>
@@ -535,7 +535,7 @@
                                  <li><a href="#"><i class="fa fa-circle"></i> my account</a>
                                  </li>
                                  <li><a href="#"><i class="fa fa-circle"></i> my profile</a>
-                                 </li>                      
+                                 </li>
                                  <li><a href="#"><i class="fa fa-circle"></i>email notification</a>
                                  </li>
                                  <li><a href="#"><i class="fa fa-circle"></i>change password</a>
@@ -601,7 +601,7 @@
                                 <div class="c-menu-item__title">fund transfer</div>
                             </a>
                         </li>
-                    </ul>         
+                    </ul>
                     <ul class="u-list crm_drop_second_ul">
                         <li class="crm_navi_icon">
                             <div class="c-menu__item__inner"><a href="all_transactions.html"><i class="flaticon-help"></i></a>
@@ -691,12 +691,12 @@
                                 <div class="c-menu-item__title">deposit</div>
                             </a>
                         </li>
-                    </ul>   
+                    </ul>
                 </nav>
             </div>
         </div>
         <!-- Main section Start -->
-         <div class="l-main">         
+         <div class="l-main">
           <!--  my account wrapper start -->
             <div class="account_top_information">
                 <div class="account_overlay"></div>
@@ -757,7 +757,7 @@
                 </div>
 
             </div>
-            <!--  my account wrapper end -->    
+            <!--  my account wrapper end -->
 <!--  account wrapper start -->
             <div class="account_wrapper float_left">
 
@@ -800,23 +800,19 @@
                                         <tbody>
                                             <tr>
                                                 <td class="invest_td1">Active Deposit</td>
-                                                <td class="invest_td1"> : $0.00 USD</td>
+                                                <td class="invest_td1"> : @isset($deposit->active_deposit){{'$ '.$deposit->active_deposit.'.00 USD'}}@endisset</td>
                                             </tr>
                                             <tr>
                                                 <td class="invest_td1">New Deposit</td>
-                                                
-                                                <td class="invest_td1">:                $@foreach($deposit as $d)
-                                                    {{ $d->amount[0] }}
-                                                @endforeach
-                                                </td>
+                                                <td class="invest_td1"> : @isset($deposit->new_deposit){{'$ '.$deposit->new_deposit.'.00 USD'}}@endisset</td>
                                             </tr>
                                             <tr>
                                                 <td class="invest_td1">Matured Deposit</td>
-                                                <td class="invest_td1">: $0.00 USD</td>
+                                                <td class="invest_td1"> : @isset($deposit->matured_deposit){{'$ '.$deposit->matured_deposit.'.00 USD'}}@endisset</td>
                                             </tr>
                                             <tr>
                                                 <td class="invest_td1">Released Deposit</td>
-                                                <td class="invest_td1">: $0.00 USD</td>
+                                                <td class="invest_td1"> : @isset($deposit->released_deposit){{'$ '.$deposit->released_deposit.'.00 USD'}}@endisset</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -837,11 +833,11 @@
                                         <tbody>
                                             <tr>
                                                 <td class="invest_td1">total payouts</td>
-                                                <td class="invest_td1"> : $0.00 USD</td>
+                                                <td class="invest_td1"> : @isset($payout->total_payout){{'$ '.$payout->total_payout.'.00 USD'}}@endisset</td>
                                             </tr>
                                             <tr>
                                                 <td class="invest_td1">pending payouts</td>
-                                                <td class="invest_td1">: $0.00 USD</td>
+                                                <td class="invest_td1"> : @isset($payout->pending_payout){{'$ '.$payout->pending_payout.'.00 USD'}}@endisset</td>
                                             </tr>
 
                                         </tbody>
@@ -863,19 +859,19 @@
                                         <tbody>
                                             <tr>
                                                 <td class="invest_td1">interest today</td>
-                                                <td class="invest_td1"> : $0.00 USD</td>
+                                                <td class="invest_td1"> : @isset($interest->today_interest){{'$ '.$interest->today_interest.'.00 USD'}}@endisset</td>
                                             </tr>
                                             <tr>
                                                 <td class="invest_td1">interest this week</td>
-                                                <td class="invest_td1">: $0.00 USD</td>
+                                                <td class="invest_td1"> : @isset($interest->weekly_interest){{'$ '.$interest->weekly_interest.'.00 USD'}}@endisset</td>
                                             </tr>
                                             <tr>
                                                 <td class="invest_td1">interest this month</td>
-                                                <td class="invest_td1">: $0.00 USD</td>
+                                                <td class="invest_td1"> : @isset($interest->monthly_interest){{'$ '.$interest->monthly_interest.'.00 USD'}}@endisset</td>
                                             </tr>
                                             <tr>
                                                 <td class="invest_td1">interest earnings</td>
-                                                <td class="invest_td1">: $0.00 USD</td>
+                                                <td class="invest_td1"> : @isset($interest->interest_earning){{'$ '.$interest->interest_earning.'.00 USD'}}@endisset</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -929,11 +925,11 @@
                                         <tbody>
                                             <tr>
                                                 <td class="invest_td1">interest today</td>
-                                                <td class="invest_td1"> : 11 nos</td>
+                                                <td class="invest_td1"> : @isset($refferal->today_interest){{'$ '.$refferal->today_interest.'.00 USD'}}@endisset</td>
                                             </tr>
                                             <tr>
                                                 <td class="invest_td1">interest this week</td>
-                                                <td class="invest_td1">: nos</td>
+                                                <td class="invest_td1"> : @isset($refferal->weekly_interest){{'$ '.$refferal->weekly_interest.'.00 USD'}}@endisset</td>
                                             </tr>
 
                                         </tbody>
@@ -985,7 +981,7 @@
                 </div>
             </div>
          </div>
-       <!--  footer  wrapper end -->      
+       <!--  footer  wrapper end -->
     <!-- main box wrapper End-->
 <!-- ============================================================== -->
 <!-- All Jquery -->

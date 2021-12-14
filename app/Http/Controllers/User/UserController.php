@@ -5,6 +5,9 @@ namespace App\Http\Controllers\User;
 use App\Http\Controllers\Controller;
 use App\Deposit;
 use App\DepositUsdt;
+use App\Interest;
+use App\Payout;
+use App\Refferal;
 use App\User;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
@@ -15,6 +18,11 @@ use File;
 
 class UserController extends Controller
 {
+    public function __construct(User $userObject)
+    {
+       $this->middleware(['auth','verified']);
+
+    }
     /**
      * Display a listing of the resource.
      *
@@ -132,8 +140,17 @@ class UserController extends Controller
     }
     public function myAccount(){
         $user = Auth::user();
-        $myaccount = Deposit::where('user_id',$user->id)->get();
-        return view('user.admin.my_account',['deposit'=>$myaccount]);
+        $deposit = Deposit::where('user_id',$user->id)->first();
+        $payout = Payout::where('user_id',$user->id)->first();
+        $refferal = Refferal::where('user_id',$user->id)->first();
+        $interest = Interest::where('user_id',$user->id)->first();
+        return view('user.admin.my_account',
+            [
+                'deposit'=>$deposit,
+                'payout'=>$payout,
+                'refferal'=>$refferal,
+                'interest'=>$interest
+            ]);
     }
     public function depositFund(){
         $user = Auth::user();
@@ -171,6 +188,7 @@ class UserController extends Controller
             }
         }
         $deposit->amount = $request->input('amount');
+        $deposit->active_deposit = $request->input('active_deposit');
         $deposit->remarks = $request->input('remarks');
         $deposit->pin = $request->input('pin');
         $deposit->user_id = $user->id;
@@ -205,6 +223,7 @@ class UserController extends Controller
         Session::flash('success_message','Deposit Fund updated successfully.');
         return redirect()->back();
     }
+
 
     public function notifications()
     {
