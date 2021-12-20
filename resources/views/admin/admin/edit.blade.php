@@ -58,7 +58,6 @@
                                 <div class="clearfix"></div>
                             </div>
                         </div>
-
                         <div class="form-group m-b-0">
                             <div class="col-sm-offset-3 col-sm-4 text-center">
                                 <a href="{{ route('admin.dashboard') }}" class="btn btn-info waves-effect waves-light

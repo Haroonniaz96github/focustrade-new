@@ -6,8 +6,11 @@ use App\Http\Controllers\Controller;
 use App\Deposit;
 use App\DepositUsdt;
 use App\Interest;
+use App\Package;
 use App\Payout;
 use App\Refferal;
+use App\PaymentRequest;
+use App\Team;
 use App\User;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
@@ -15,6 +18,7 @@ use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 use File;
+use DB;
 
 class UserController extends Controller
 {
@@ -30,7 +34,23 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('user.dashboard.index');
+        $user=Auth::user();
+        $deposit = Deposit::where('user_id',$user->id)->first();
+        $payout = Payout::where('user_id',$user->id)->first();
+        $refferal = Refferal::where('user_id',$user->id)->first();
+        $interest = Interest::where('user_id',$user->id)->first();
+        $package= Package::where('user_id',$user->id)->first();
+        $team= Team::where('user_id',$user->id)->first();
+
+        return view('user.dashboard.index',
+        [
+            'deposit'=>$deposit,
+            'payout'=>$payout,
+            'refferal'=>$refferal,
+            'interest'=>$interest,
+            'package'=>$package,
+            'team'=>$team,
+        ]);
     }
 
     /**
@@ -144,12 +164,14 @@ class UserController extends Controller
         $payout = Payout::where('user_id',$user->id)->first();
         $refferal = Refferal::where('user_id',$user->id)->first();
         $interest = Interest::where('user_id',$user->id)->first();
+        $package= Package::where('user_id',$user->id)->first();
         return view('user.admin.my_account',
             [
                 'deposit'=>$deposit,
                 'payout'=>$payout,
                 'refferal'=>$refferal,
-                'interest'=>$interest
+                'interest'=>$interest,
+                'package'=>$package,
             ]);
     }
     public function depositFund(){
@@ -157,31 +179,26 @@ class UserController extends Controller
         $deposit = Deposit::where('user_id',$user->id)->first();
         return view('user.admin.deposit_fund',['deposit'=>$deposit]);
     }
-
     public function updateDepositFund(Request $request)
     {
         $user = Auth::user();
-        $deposit = Deposit::find($user->id);
+        $deposit = Deposit::where('user_id',$user->id)->first();
         if(!$deposit){
             $deposit= new Deposit();
         }
         $this->validate($request, [
             'amount' => 'required|max:255',
-            'remarks' => 'required|max:255',
-            'pin' => 'required|max:255',
         ]);
         if ($request->hasFile('slip')) {
             if ($request->file('slip')->isValid()) {
                 $this->validate($request, [
                     'slip' => 'required'
                 ]);
-                $deposit = $request->file('slip');
+                $slip = $request->file('slip');
                 $destinationPath = "uploads/";
-                $extension = $deposit->getClientOriginalExtension();
-                $fileName = $deposit->getClientOriginalName();
+                $extension = $slip->getClientOriginalExtension();
+                $fileName = $slip->getClientOriginalName();
                 $fileName = rand() . $fileName;
-                $delete_old_file = "uploads/".$deposit->slip;
-                File::delete($delete_old_file);
                 //renaming image
                 $request->file('slip')->move($destinationPath, $fileName);
                 $deposit->slip = $fileName;
@@ -223,8 +240,20 @@ class UserController extends Controller
         Session::flash('success_message','Deposit Fund updated successfully.');
         return redirect()->back();
     }
-
-
+    public function paymentRequest(){
+        return view('user.admin.payment_request');
+    }
+    public function submitPaymentRequest(Request $request){
+        $this->validate($request, [
+            'account_id' => 'required|max:255',
+        ]);
+        $user = Auth::user()->id;
+        $ac = $request->input('account_id');
+        $acc = filter_var($ac, FILTER_SANITIZE_STRING);
+        DB::insert("INSERT INTO payment_request (account_id, user_id) VALUES ($acc, $user)");
+        Session::flash('success_message', 'Account information saved successfully!');
+        return redirect()->back();
+    }
     public function notifications()
     {
 //        dd(auth()->user()->notifications());
