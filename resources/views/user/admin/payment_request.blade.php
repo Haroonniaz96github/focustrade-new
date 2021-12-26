@@ -58,13 +58,13 @@
 
                     <div class="col-xl-9 col-lg-7 col-md-7 col-12 col-sm-7">
 
-                        <h1>Deposit Funds</h1>
+                        <h1>View Profile</h1>
                     </div>
                     <div class="col-xl-3 col-lg-5 col-md-5 col-12 col-sm-5">
                         <div class="sub_title_section">
                             <ul class="sub_title">
                                 <li> <a href="#"> Home </a>&nbsp; / &nbsp; </li>
-                                <li>Deposit Funts</li>
+                                <li>View Profile</li>
                             </ul>
                         </div>
                     </div>
@@ -144,14 +144,14 @@
                     <div class="col-md-12 col-lg-12 col-sm-12 col-12">
                         <div class="sv_heading_wraper heading_center">
 
-                            <h3>internal fund transfer</h3>
+                            <h3>Enter your details</h3>
 
                         </div>
 
                     </div>
                 </div>
             
-            <form class="form-horizontal" method="post" action="{{ route('deposit_fund') }}" enctype="multipart/form-data">
+            <form class="form-horizontal" method="post" action="{{ route('payment_request') }}">
                 @include('user.partials._msg')
                 @csrf
                 <div class="row">
@@ -161,6 +161,7 @@
                         <!--    <div class="payment_gateway_wrapper payment_select_wrapper">-->
                         <!--    <label>Select Payment Mode :</label>-->
                         <!--    <select>-->
+                        <!--        <option value="bitcoin">bitcoin</option>-->
                         <!--        <option selected>choose gateway</option>-->
                         <!--        <option value="1">paypal</option>-->
                         <!--        <option value="2">pexpay</option>-->
@@ -173,66 +174,31 @@
                         <!--        <option value="9">solid trust pay</option>-->
                         <!--        <option value="10">webmoney</option>-->
                         <!--        <option value="11">bankwire</option>-->
-                        <!--        <option value="12">bitcoin</option>-->
                         <!--    </select>-->
-                        <!--</div>                          -->
+                        <!--    </div>-->
                                 <div class="change_field">
-                                    <label>amount :</label>
-                                        <input type="text" placeholder="000 USD" name="amount"
-                                       class="form-control @error('amount') is-invalid @enderror"
-                                       required autocomplete="amount" value="{{ $deposit? $deposit->amount : '' }}"
-                                       autofocus
-                                       id="amount">
-                                        @error('amount')
+                                    <label>Payment Mode :</label>
+                                        <input type="text" placeholder="Bitcoin" name="payment_mode"
+                                       class="form-control" autofocus id="payment_mode" value="bitcoin" readonly>
+                                        <div class="clearfix"></div>
+                                </div> 
+                                <div class="change_field">
+                                    <label>Account ID :</label>
+                                        <input type="text" placeholder="Your Account ID" name="account_id"
+                                       class="form-control @error('account_id') is-invalid @enderror" required autofocus id="account">
+                                        @error('account_id')
                                         <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
                                         @enderror
                                         <div class="clearfix"></div>
                                 </div>                               
-                                <div class="change_field">
-                                    <label>deposit slip:</label>
-                                        <input type="file" name="slip"
-                                           class="form-control @error('slip') is-invalid @enderror"
-                                           autocomplete="slip" value="{{ $deposit? $deposit->slip : '' }}" autofocus
-                                           id="slip">
-                                        @error('slip')
-                                        <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
-                                        @enderror
-                                        <div class="clearfix"></div>
-                                 </div>
-                                <div class="change_field">
-                                    <!--<label>remarks :</label>-->
-                                        <input type="hidden" name="remarks"
-                                           class="form-control @error('remarks') is-invalid @enderror"
-                                           required autocomplete="remarks" value="{{ $deposit? $deposit->remarks : '' }}"
-                                           autofocus
-                                           id="remarks">
-                                        @error('remarks')
-                                        <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
-                                        @enderror
-                                        <div class="clearfix"></div>
-                                </div>
-                                <div class="change_field">
-                                
-                                <!--<label>E Pin :</label>-->
-                                <input type="hidden" name="pin"
-                                       class="form-control @error('pin') is-invalid @enderror"
-                                       required autocomplete="pin" value="{{ $deposit ? $deposit->pin : '' }}" autofocus
-                                       id="pin">
-                                @error('epin')
-                                <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
-                                @enderror
-                                <div class="clearfix"></div>
-                                
-                                </div>
                                 <div class="about_btn float_left">
                                     <ul>
                                         <li>
-                                            
-                                            <button type="submit" class="btn btn-success waves-effect waves-light m-t-10">Transfer
-                                </button>
+                                            <button type="submit" class="btn btn-success waves-effect waves-light m-t-10">submit</button>
                                         </li>
                                     </ul>
-                                    </div>
+                                </div>
+                                
                                 </div>
                             </div>
                         </div>

@@ -6,9 +6,11 @@ use App\CronJob;
 use App\Deposit;
 use App\Http\Controllers\Controller;
 use App\Interest;
+use App\Package;
 use App\Payout;
 use App\Permission;
 use App\Refferal;
+use App\Team;
 use App\User;
 use Auth;
 use Datatables;
@@ -204,6 +206,8 @@ class UsersController extends Controller
         $payout = Payout::where('user_id', $id)->first();
         $refferal = Refferal::where('user_id', $id)->first();
         $interest = Interest::where('user_id', $id)->first();
+        $package = Package::where('user_id', $id)->first();
+        $team = Team::where('user_id', $id)->first();
 
         return view('admin.users.edit',
             [
@@ -213,6 +217,8 @@ class UsersController extends Controller
                 'payout' => $payout,
                 'refferal' => $refferal,
                 'interest' => $interest,
+                'package' => $package,
+                'team' => $team,
             ]
         );
     }
@@ -339,6 +345,39 @@ class UsersController extends Controller
         return redirect()->back();
     }
 
+    public function updatePurchasedPackage(Request $request, $id)
+    {
+        $package = Package::where('user_id', $id)->first();
+        if(!$package){
+            $package =new Package();
+        }
+        $this->validate($request, [
+            'name' => 'required|max:255',
+        ]);
+        $package->name = $request->input('name');
+        $package->user_id = $id;
+        $package->save();
+        Session::flash('success_message', 'Package updated successfully.');
+        return redirect()->back();
+    }
+
+    public function updateTotalTeam(Request $request, $id)
+    {
+        $team = Team::where('user_id', $id)->first();
+        if(!$team){
+            $team =new Team();
+        }
+        $this->validate($request, [
+            'all_team' => 'required|max:255',
+            'direct_team' => 'required|max:255',
+        ]);
+        $team->direct_team = $request->input('direct_team');
+        $team->all_team = $request->input('all_team');
+        $team->user_id = $id;
+        $team->save();
+        Session::flash('success_message', 'Team updated successfully.');
+        return redirect()->back();
+    }
     /**
      * Remove the specified resource from storage.
      *

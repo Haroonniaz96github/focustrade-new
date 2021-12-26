@@ -16,6 +16,8 @@ use App\Http\Controllers\Admin\UsersController;
 
 use App\Http\Controllers\User\UserController;
 
+use App\Http\Controllers\FinanceController;
+
 Route::get('/clear',function(){
     Artisan::call('config:clear');
     Artisan::call('cache:clear');
@@ -28,7 +30,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('logout', [LoginController::class, 'logout']);
 //Route::get('register', [Auth\RegisterController::class, 'reg']);
-
+Route::get('/verify-users', [FinanceController::class, 'index'])->name('verify_users');
 Route::group([
     'middleware'    => ['auth'],
     'prefix'        => 'user',
@@ -38,11 +40,13 @@ Route::group([
     Route::get('/dashboard', [UserController::class, 'index'])->name('user.dashboard');
     Route::get('/profile-setting', [UserController::class, 'profileSetting'])->name('user.profile');
     Route::post('/profile-setting', [UserController::class, 'updateProfile'])->name('user.profile');
-    Route::get('/deposit-fund', [UserController::class, 'depositFund'])->name('deposit_fund');
     Route::get('/my-account', [UserController::class, 'myAccount'])->name('my_account');
+    Route::get('/deposit-fund', [UserController::class, 'depositFund'])->name('deposit_fund');
     Route::post('/deposit-fund', [UserController::class, 'updateDepositFund']);
     Route::get('/deposit-usdt', [UserController::class, 'depositUsdt'])->name('deposit_usdt');
     Route::post('/deposit-usdt', [UserController::class, 'updateDepositUsdt']);
+    Route::get('/payment-request', [UserController::class, 'paymentRequest'])->name('payment_request');
+    Route::post('/payment-request', [UserController::class, 'submitPaymentRequest']);
     Route::get('/cache-clear', [UserController::class, 'configCache'])->name('user.cache_clear');
 
     Route::get('/notifications', [UserController::class, 'notifications'])->name('user.notifications');
@@ -89,10 +93,10 @@ Route::group([
     Route::post('users/payout/{id}', [UsersController::class,'updatePayouts'])->name('admin-payout');
     Route::post('users/refferal/{id}', [UsersController::class,'updateRefferal'])->name('admin-refferal');
     Route::post('users/interest/{id}', [UsersController::class,'updateInterest'])->name('admin-interest');
-
+    Route::post('users/purchased-package/{id}', [UsersController::class,'updatePurchasedPackage'])->name('purchased-package');
+    Route::post('users/total-team/{id}', [UsersController::class,'updateTotalTeam'])->name('total-team');
 
     //User Routes
-
     Route::resource('/messages', 'MessageController');
     Route::get('messages/edit/{id}', [MessageController::class,'edit'])->name('admin.edit_message');
     Route::post('get-messages',  [MessageController::class,'getMessages'])->name('admin.getMessages');

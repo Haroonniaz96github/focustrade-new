@@ -383,6 +383,89 @@
                 </div>
             </div>
         </div>
+
+        <!-- .row -->
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="white-box">
+                    @include('admin.partials._msg')
+                    <h3 class="box-title m-b-0">Package</h3>
+                    {{ Form::model($user, ['method' => 'post','route' => ['purchased-package', $user->id],'class'=>'form-horizontal'])}}
+                    <div class="form-group">
+                        <label for="name" class="col-sm-3 control-label">Purchased Package</label>
+                        <div class="col-sm-4">
+                            <input type="text" name="name"
+                                   class="form-control @error('name') is-invalid @enderror"
+                                   required autocomplete="name" value="@if($package){{$package->name}}@endif" autofocus
+                                   id="name">
+                            @error('name')
+                            <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                            @enderror
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="form-group m-b-0">
+                        <div class="col-sm-offset-3 col-sm-4 text-center">
+                            <a href="{{ route('users.index') }}" class="btn btn-info waves-effect waves-light
+                                 m-t-10"><i class="fa fa-backward"></i> Back</a>
+                            <button type="submit" class="btn btn-success waves-effect waves-light m-t-10">
+                                <i class="fa fa-check"></i> Save
+                            </button>
+                        </div>
+                    </div>
+                    {{Form::close()}}
+
+                </div>
+            </div>
+        </div>
+
+        <!-- .row -->
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="white-box">
+                    @include('admin.partials._msg')
+                    <h3 class="box-title m-b-0">All Team</h3>
+                    {{ Form::model($user, ['method' => 'post','route' => ['total-team', $user->id],'class'=>'form-horizontal'])}}
+                    <div class="form-group">
+                        <label for="direct_team" class="col-sm-3 control-label">Direct Team</label>
+                        <div class="col-sm-4">
+                            <input type="text" name="direct_team"
+                                   class="form-control @error('direct_team') is-invalid @enderror"
+                                   required autocomplete="direct_team" value="@if($team){{$team->direct_team}}@endif" autofocus
+                                   id="direct_team">
+                            @error('direct_team')
+                            <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                            @enderror
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="all_team" class="col-sm-3 control-label">Direct Team</label>
+                        <div class="col-sm-4">
+                            <input type="text" name="all_team"
+                                   class="form-control @error('all_team') is-invalid @enderror"
+                                   required autocomplete="all_team" value="@if($team){{$team->all_team}}@endif" autofocus
+                                   id="all_team">
+                            @error('all_team')
+                            <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                            @enderror
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="form-group m-b-0">
+                        <div class="col-sm-offset-3 col-sm-4 text-center">
+                            <a href="{{ route('users.index') }}" class="btn btn-info waves-effect waves-light
+                                 m-t-10"><i class="fa fa-backward"></i> Back</a>
+                            <button type="submit" class="btn btn-success waves-effect waves-light m-t-10">
+                                <i class="fa fa-check"></i> Save
+                            </button>
+                        </div>
+                    </div>
+                    {{Form::close()}}
+
+                </div>
+            </div>
+        </div>
     </div>
 @stop
 
