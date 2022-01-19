@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="16x16"
           href="@isset($setting['favicon']) {{ asset('images/'.$setting['favicon']) }}@endisset">
     <title>@isset($setting['site_title']) {{ $setting['site_title'] }}@endisset</title>
-    
+    <link href=" https://focustrade.us/uploads/focus-fav.jpg" rel="icon">
     <!--Template style -->
     <link rel="stylesheet" type="text/css" href={{ asset('css/new/animate.css')}} />
     <link rel="stylesheet" type="text/css" href={{ asset('css/new/bootstrap.min.css')}} />
@@ -205,12 +205,12 @@
                                 </div>
                                 <div class="col-xl-6 col-md-12 col-lg-12 col-sm-12 col-12">
                                     <ul class="profile_list">
-                                        <li><span class="detail_left_part">Pexpay</span> <span class="detail_right_part">--Not Updated--</span>
+                                        <li><span class="detail_left_part">Payment Mode</span> <span class="detail_right_part">Bitcoin</span>
                                         </li>
-                                        <li><span class="detail_left_part">PerfectMoney</span> <span class="detail_right_part"></span>
+                                        <li><span class="detail_left_part">Network Type</span> <span class="detail_right_part">{{ $PayReq->network }}</span>
                                         </li>
-                                        <!--<li><span class="detail_left_part">Payza</span> <span class="detail_right_part">example@gmail.com</span>-->
-                                        <!--</li>-->
+                                        <li><span class="detail_left_part">Account ID</span> <span class="detail_right_part">{{ $PayReq->account_id }}</span>
+                                        </li>
                                         <!--<li><span class="detail_left_part">HDMoney</span> <span class="detail_right_part"> --Not Updated--</span>-->
                                         <!--</li>-->
                                         <!--<li><span class="detail_left_part">Paypal</span> <span class="detail_right_part">example@gmail.com</span>-->

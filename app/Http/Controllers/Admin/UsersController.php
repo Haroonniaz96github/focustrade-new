@@ -175,7 +175,9 @@ class UsersController extends Controller
         }
         $user->password = bcrypt($input['password']);
         $user->save();
-
+        $user = $this->obj_user->findOrFail($user->id);
+        $user->userid='FT000'.$user->id;
+        $user->save();
         Session::flash('success_message', 'Great! User has been saved successfully!');
         $user->save();
         return redirect()->back();

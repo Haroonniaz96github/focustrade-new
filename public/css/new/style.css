@@ -1430,9 +1430,39 @@ a:hover {
     -moz-transition: all 0.6s;
     transition: all 0.6s;
 }
+.about_btn button{
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    height: 40px;
+    background: #00aaef;
+    color: #fff;
+    text-transform: capitalize;
+    cursor:pointer;
+}
+.about_btn button:hover{
+    border: 2px solid #00aaef;
+    width: 100%;
+   
+	-webkit-transition: -webkit-transform 0.6s, opacity 0.6s;
+	transition: transform 0.6s, opacity 0.6s;
+	-webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+	transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+	
+	
+    background-color:transparent;
+	color: #00aaef;
+	   -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    transition: all 0.6s;
+}
 /***------investment plans wrapper css------****/
 .investment_plans{
-	background-image: url(../images/investment.jpg);
+	background-image: url(../../images/investment.jpg);
     height: 100%;
     background-position: center 0;
     background-size: cover;
@@ -6680,7 +6710,7 @@ dl.userdescc dd{
 .login_banner_wrapper{
 	float:left;
 	width:45%;
-    background-image: url(../images/login.jpg);
+    background-image: url(../../images/finance.jpg);
     height: 100%;
     background-position: center 0;
     background-size: cover;

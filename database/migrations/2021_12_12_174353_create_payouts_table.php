@@ -18,7 +18,7 @@ class CreatePayoutsTable extends Migration
             $table->string('total_payout');
             $table->string('pending_payout');
             $table->unsignedBigInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }

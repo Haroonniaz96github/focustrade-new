@@ -87,8 +87,8 @@
                     <dl class="userdescc">
                         <dt>Registration Date</dt>
                         <dd>: &nbsp; {{ Auth::user()->created_at }}</dd>
-                        <dt>Last Login</dt>
-                        <dd>: &nbsp; Jul-05-2019 07:06:36</dd>
+                        <!--<dt>Last Login</dt>-->
+                        <!--<dd>: &nbsp; Jul-05-2019 07:06:36</dd>-->
                         <!--<dt>Current Login</dt>-->
                         <!--<dd>: &nbsp; Jul-06-2019 02:47:23</dd>-->
                         <!--<dt>Last Access IP</dt>-->
@@ -158,30 +158,22 @@
                      <div class="col-md-12 col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-sm-12 col-12">
                         <div class="change_password_wrapper float_left">
                             <div class="change_pass_field float_left">  
-                        <!--    <div class="payment_gateway_wrapper payment_select_wrapper">-->
-                        <!--    <label>Select Payment Mode :</label>-->
-                        <!--    <select>-->
-                        <!--        <option value="bitcoin">bitcoin</option>-->
-                        <!--        <option selected>choose gateway</option>-->
-                        <!--        <option value="1">paypal</option>-->
-                        <!--        <option value="2">pexpay</option>-->
-                        <!--        <option value="3">perfectMoney</option>-->
-                        <!--        <option value="4">perfectMoney</option>-->
-                        <!--        <option value="5">payza</option>-->
-                        <!--        <option value="6">HDMoney</option>-->
-                        <!--        <option value="7">EGOpay</option>-->
-                        <!--        <option value="8">OKpay</option>-->
-                        <!--        <option value="9">solid trust pay</option>-->
-                        <!--        <option value="10">webmoney</option>-->
-                        <!--        <option value="11">bankwire</option>-->
-                        <!--    </select>-->
-                        <!--    </div>-->
                                 <div class="change_field">
                                     <label>Payment Mode :</label>
                                         <input type="text" placeholder="Bitcoin" name="payment_mode"
                                        class="form-control" autofocus id="payment_mode" value="bitcoin" readonly>
                                         <div class="clearfix"></div>
                                 </div> 
+                                <div class="payment_gateway_wrapper payment_select_wrapper">
+                                    <label>Choose Network :</label>
+                                    <select name="network_type" class="form-control @error('network_type') is-invalid @enderror">
+                                        <option selected disabled>choose network type</option>
+                                        <option value="Binance Chain (BEP2)">Binance Chain (BEP2)</option>
+                                        <option value="Binance Smart Chain (BEP20)">Binance Smart Chain (BEP20)</option>
+                                        <option value="Solana">Solana</option>
+                                        <option value="Tron (TRC20)">Tron (TRC20)</option>
+                                    </select>
+                                </div>
                                 <div class="change_field">
                                     <label>Account ID :</label>
                                         <input type="text" placeholder="Your Account ID" name="account_id"

@@ -1,0 +1,54 @@
+[16-Dec-2021 02:28:18 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\User\UserController::paymentRequest() in /home/focuuyrb/public_html/app/Http/Controllers/User/UserController.php on line 237
+[18-Dec-2021 18:57:43 UTC] PHP Warning:  include(/home/focuuyrb/public_html/vendor/composer/../../app/Http/Kernel.php): failed to open stream: No such file or directory in /home/focuuyrb/public_html/vendor/composer/ClassLoader.php on line 444
+[18-Dec-2021 18:57:43 UTC] PHP Warning:  include(): Failed opening '/home/focuuyrb/public_html/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/focuuyrb/public_html/vendor/composer/ClassLoader.php on line 444
+[18-Dec-2021 18:57:43 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Http\Kernel does not exist in /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build(Object(Clos in /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+[18-Dec-2021 18:57:46 UTC] PHP Warning:  include(/home/focuuyrb/public_html/vendor/composer/../../app/Http/Kernel.php): failed to open stream: No such file or directory in /home/focuuyrb/public_html/vendor/composer/ClassLoader.php on line 444
+[18-Dec-2021 18:57:46 UTC] PHP Warning:  include(): Failed opening '/home/focuuyrb/public_html/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/focuuyrb/public_html/vendor/composer/ClassLoader.php on line 444
+[18-Dec-2021 18:57:46 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Http\Kernel does not exist in /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build(Object(Clos in /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+[18-Dec-2021 18:59:05 UTC] PHP Warning:  include(/home/focuuyrb/public_html/vendor/composer/../../app/Http/Kernel.php): failed to open stream: No such file or directory in /home/focuuyrb/public_html/vendor/composer/ClassLoader.php on line 444
+[18-Dec-2021 18:59:05 UTC] PHP Warning:  include(): Failed opening '/home/focuuyrb/public_html/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/focuuyrb/public_html/vendor/composer/ClassLoader.php on line 444
+[18-Dec-2021 18:59:05 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Http\Kernel does not exist in /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build(Object(Clos in /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+[18-Dec-2021 19:01:22 UTC] PHP Warning:  include(/home/focuuyrb/public_html/vendor/composer/../../app/Http/Kernel.php): failed to open stream: No such file or directory in /home/focuuyrb/public_html/vendor/composer/ClassLoader.php on line 444
+[18-Dec-2021 19:01:22 UTC] PHP Warning:  include(): Failed opening '/home/focuuyrb/public_html/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/focuuyrb/public_html/vendor/composer/ClassLoader.php on line 444
+[18-Dec-2021 19:01:22 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Http\Kernel does not exist in /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build(Object(Clos in /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+[18-Dec-2021 19:03:05 UTC] PHP Warning:  include(/home/focuuyrb/public_html/vendor/composer/../../app/Http/Kernel.php): failed to open stream: No such file or directory in /home/focuuyrb/public_html/vendor/composer/ClassLoader.php on line 444
+[18-Dec-2021 19:03:05 UTC] PHP Warning:  include(): Failed opening '/home/focuuyrb/public_html/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/focuuyrb/public_html/vendor/composer/ClassLoader.php on line 444
+[18-Dec-2021 19:03:05 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Http\Kernel does not exist in /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build(Object(Clos in /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+[18-Dec-2021 19:03:57 UTC] PHP Warning:  Uncaught ErrorException: require(/home/focuuyrb/public_html/routes/api.php): failed to open stream: No such file or directory in /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php:35
+Stack trace:
+#0 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php(35): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(/home/f...', '/home/focuuyrb/...', 35, Array)
+#1 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php(35): require()
+#2 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(416): Illuminate\Routing\RouteFileRegistrar->register('/home/focuuyrb/...')
+#3 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(374): Illuminate\Routing\Router->loadRoutes('/home/focuuyrb/...')
+#4 /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php(121): Illuminate\Routi in /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php on line 35
+[18-Dec-2021 19:03:57 UTC] PHP Fatal error:  Illuminate\Routing\RouteFileRegistrar::register(): Failed opening required '/home/focuuyrb/public_html/routes/api.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/focuuyrb/public_html/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php on line 35

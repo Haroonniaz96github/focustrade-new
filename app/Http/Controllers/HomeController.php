@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -25,4 +26,15 @@ class HomeController extends Controller
     {
         return view('theme.index');
     }
+
+    public function checkSponser(Request $request)
+    {
+        $sponser_id = User::where('userid', $request->input("sponser_id"))->first();
+        if ($sponser_id==null) {
+            return response()->json(['status' => '0']);
+        } else {
+            return response()->json(['status' => '1',]);
+        }
+    }
+
 }

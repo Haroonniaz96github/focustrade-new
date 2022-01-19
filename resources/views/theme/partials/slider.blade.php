@@ -7,7 +7,7 @@
         <div class="carousel-inner" role="listbox">
 
             <!-- Slide 1 -->
-            <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)">
+            <div class="carousel-item active" style="background-image: url(public/front_end/assets/img/slide/image001.jpg)">
                 <div class="carousel-container">
                     <div class="container">
                         <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Forex</span></h2>
@@ -18,7 +18,7 @@
             </div>
 
             <!-- Slide 2 -->
-            <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">
+            <div class="carousel-item" style="background-image: url(public/front_end/assets/img/slide/image003.jpg)">
                 <div class="carousel-container">
                     <div class="container">
                         <h2 class="animate__animated animate__fadeInDown">Forex Pairs and Quotes</h2>
@@ -29,7 +29,7 @@
             </div>
 
             <!-- Slide 3 -->
-            <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)">
+            <div class="carousel-item" style="background-image: url(public/front_end/assets/img/slide/image005.jpg)">
                 <div class="carousel-container">
                     <div class="container">
                         <h2 class="animate__animated animate__fadeInDown">Focus Lots</h2>

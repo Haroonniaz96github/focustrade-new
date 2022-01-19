@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="16x16"
           href="@isset($setting['favicon']) {{ asset('images/'.$setting['favicon']) }}@endisset">
     <title>@isset($setting['site_title']) {{ $setting['site_title'] }}@endisset</title>
-
+    <link href=" https://focustrade.us/uploads/focus-fav.jpg" rel="icon">
     <!--Template style -->
     <link rel="stylesheet" type="text/css" href={{ asset('css/new/animate.css')}} />
     <link rel="stylesheet" type="text/css" href={{ asset('css/new/bootstrap.min.css')}} />
@@ -167,7 +167,7 @@
                         <!--    </select>-->
                         <!--</div>-->
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-5 col-sm-6 col-12">
+                    <div class="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-12">
                         <div class="investment_box_wrapper color_1 float_left">
                             <a href="#">
                                 <div class="investment_icon_wrapper float_left">
@@ -194,6 +194,58 @@
                                                 <td class="invest_td1">Released Deposit</td>
                                                 <td class="invest_td1"> : @isset($deposit->released_deposit){{'$ '.$deposit->released_deposit.'.00 USD'}}@endisset</td>
                                             </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-5 col-sm-6 col-12">
+                        <div class="investment_box_wrapper color_2 float_left">
+                            <a href="#">
+                                <div class="investment_icon_wrapper float_left">
+                                    <i class="far fa-money-bill-alt"></i>
+                                    <h1>referral</h1>
+                                </div>
+
+                                <div class="invest_details float_left">
+                                    <table class="invest_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="invest_td1">Profit today</td>
+                                                <td class="invest_td1"> : @isset($refferal->today_interest){{'$ '.$refferal->today_interest.'.00 USD'}}@endisset</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="invest_td1">Profit this week</td>
+                                                <td class="invest_td1"> : @isset($refferal->weekly_interest){{'$ '.$refferal->weekly_interest.'.00 USD'}}@endisset</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-5 col-sm-6 col-12">
+                        <div class="investment_box_wrapper color_4 float_left">
+                            <a href="#">
+                                <div class="investment_icon_wrapper float_left">
+                                    <i class="far fa-money-bill-alt"></i>
+                                    <h1>Total team</h1>
+                                </div>
+
+                                <div class="invest_details float_left">
+                                    <table class="invest_table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="invest_td1">Direct team</td>
+                                                <td class="invest_td1"> : @isset($team->direct_team){{$team->direct_team}}@endisset</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="invest_td1">All team</td>
+                                                <td class="invest_td1">: @isset($team->all_team){{$team->all_team}}@endisset</td>
+                                            </tr>
+
                                         </tbody>
                                     </table>
                                 </div>
@@ -249,7 +301,7 @@
                                                 <td class="invest_td1"> : @isset($interest->monthly_interest){{'$ '.$interest->monthly_interest.'.00 USD'}}@endisset</td>
                                             </tr>
                                             <tr>
-                                                <td class="invest_td1">TotalProfitProfit earnings</td>
+                                                <td class="invest_td1">Total Profit earnings</td>
                                                 <td class="invest_td1"> : @isset($interest->interest_earning){{'$ '.$interest->interest_earning.'.00 USD'}}@endisset</td>
                                             </tr>
                                         </tbody>
@@ -260,51 +312,32 @@
                     </div>
 
                     <div class="col-md-6 col-lg-6 col-xl-5 col-sm-6 col-12">
-                        <div class="investment_box_wrapper color_2 float_left">
+                        <div class="investment_box_wrapper color_5 float_left">
                             <a href="#">
                                 <div class="investment_icon_wrapper float_left">
                                     <i class="far fa-money-bill-alt"></i>
-                                    <h1>referral</h1>
+                                    <h1>Bonuses</h1>
                                 </div>
 
                                 <div class="invest_details float_left">
                                     <table class="invest_table">
                                         <tbody>
                                             <tr>
-                                                <td class="invest_td1">Profit today</td>
-                                                <td class="invest_td1"> : @isset($refferal->today_interest){{'$ '.$refferal->today_interest.'.00 USD'}}@endisset</td>
+                                                <td class="new_bx_td">Generation This Week</td>
+                                                <td class="new_bx_td"> : $000.000.000USD</td>
                                             </tr>
                                             <tr>
-                                                <td class="invest_td1">Profit this week</td>
-                                                <td class="invest_td1"> : @isset($refferal->weekly_interest){{'$ '.$refferal->weekly_interest.'.00 USD'}}@endisset</td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-12">
-                        <div class="investment_box_wrapper color_4 float_left">
-                            <a href="#">
-                                <div class="investment_icon_wrapper float_left">
-                                    <i class="far fa-money-bill-alt"></i>
-                                    <h1>Total team</h1>
-                                </div>
-
-                                <div class="invest_details float_left">
-                                    <table class="invest_table">
-                                        <tbody>
-                                            <tr>
-                                                <td class="invest_td1">Direct team</td>
-                                                <td class="invest_td1"> : @isset($team->direct_team){{$team->direct_team}}@endisset</td>
+                                                <td class="new_bx_td">Total Generation</td>
+                                                <td class="new_bx_td"> : $000.000.000USD</td>
                                             </tr>
                                             <tr>
-                                                <td class="invest_td1">All team</td>
-                                                <td class="invest_td1">: @isset($team->all_team){{$team->all_team}}@endisset</td>
+                                                <td class="new_bx_td">Ranks</td>
+                                                <td class="new_bx_td"> : $000.000.000USD</td>
                                             </tr>
-
+                                            <tr>
+                                                <td class="new_bx_td">Rewards</td>
+                                                <td class="new_bx_td"> : $000.000.000USD</td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
