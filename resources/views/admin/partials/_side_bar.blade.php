@@ -16,6 +16,12 @@
                 </a>
             </li>
             <li>
+                <a href="{{ route('levels.index') }}" class="waves-effect">
+                    <i class="ti-list fa-fw"></i>
+                    <span class="hide-menu">Manage Levels</span>
+                </a>
+            </li>
+            <li>
                 <a href="index.html" class="waves-effect">
                     <i class="ti-user fa-fw"></i>
                     <span class="hide-menu"> Menu<span class="fa arrow"></span></span>

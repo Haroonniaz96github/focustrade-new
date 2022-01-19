@@ -20,7 +20,7 @@ class CreateInterestsTable extends Migration
             $table->string('monthly_interest');
             $table->string('interest_earning');
             $table->unsignedBigInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');;
             $table->timestamps();
         });
     }

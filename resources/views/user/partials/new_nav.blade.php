@@ -1,6 +1,6 @@
     <!-- cp navi wrapper Start -->
     <nav class="cd-dropdown d-block d-sm-block d-md-block d-lg-none d-xl-none">
-        <h2><a href="#"> Focustrade </a></h2>
+        <h2><a href="https://focustrade.us/"> Focustrade </a></h2>
         <a href="#0" class="cd-close">Close</a>
          <ul class="cd-dropdown-content">
             <li>
@@ -9,7 +9,7 @@
                 </form>
             </li> 
              <li class="has-children">
-                <a href="#">index</a>
+                <!--<a href="#">index</a>-->
                 <!--<ul class="cd-secondary-dropdown icon_menu is-hidden">-->
                 <!--    <li class="go-back"><a href="#0">Menu</a></li>-->
                 <!--    <li><a href="index.html">index I</a></li>-->
@@ -18,7 +18,7 @@
                 <!--</ul>-->
             </li>
             <li><a href=""> about us </a></li>
-            <li><a href=""> investment plan </a></li>
+            <li><a href="{{ route('investment_plans') }}"> investment plan </a></li>
 			<li><a href=""> FAQ </a></li>
 			<li class="has-children">
               <a href="#">dashboard</a>
@@ -31,7 +31,7 @@
                       <a href="#">banners</a>
 					</li> 
 				   <li>
-                      <a href="#">change password</a>
+                      <a href="{{ route('change_password') }}">change password</a>
 					</li>
 					<li>
                       <a href="#">change pin</a>
@@ -58,7 +58,7 @@
                       <a href="{{ route('deposit_fund') }}">make deposit</a>
                   </li> 	
 					<li>
-                      <a href="{{ route('my_account') }}">my account</a>
+                      <a href="{{ route('my_account') }}">view profile</a>
                   </li> 	
 					<li>
                       <a href="{{ route('payment_request') }}">payment request</a>
@@ -70,44 +70,39 @@
                       <a href="#">referral earnings</a>
                   </li> 	
 					<li>
-                      <a href="#">referrals</a>
+                      <a href="{{ route('levels',\Illuminate\support\Facades\Auth::user()->id) }}">referrals</a>
                   </li> 
-					<li>
-                      <a href="#">tickets</a>
-                  </li> 	
 					<li>
                       <a href="#">transfer fund</a>
                   </li>
-				<li>
-                      <a href="#">view profile</a>
-                  </li> 									
               </ul>
              </li>  
-				<li class="has-children">
-                <a href="#">blog</a>
-                <ul class="cd-secondary-dropdown icon_menu is-hidden">
-                    <li class="go-back"><a href="#0">Menu</a></li>
-                    <li><a href="#">blog category</a></li>
-                    <li><a href="#">blog single</a></li>
-                </ul>
+			<!--<li class="has-children">-->
+   <!--             <a href="#">blog</a>-->
+   <!--             <ul class="cd-secondary-dropdown icon_menu is-hidden">-->
+   <!--                 <li class="go-back"><a href="#0">Menu</a></li>-->
+   <!--                 <li><a href="#">blog category</a></li>-->
+   <!--                 <li><a href="#">blog single</a></li>-->
+   <!--             </ul>-->
 			
-            </li>   
+   <!--         </li>   -->
             <li><a href="#"> contact us </a></li>
-            <li><a href="#"> login </a></li>
-            <li><a href="#"> register </a></li>
+            <!--<li><a href="#"> login </a></li>-->
+            <!--<li><a href="#"> register </a></li>-->
             <li><a href="{{ route('logout') }}"> logout </a></li>
         </ul>
         <!-- .cd-dropdown-content -->
     </nav>
 	 <div class="cp_navi_main_wrapper inner_header_wrapper dashboard_header_middle float_left">
         <div class="container-fluid">
-              <div class="cp_logo_wrapper">
-                <a href="#">
-                    <img src={{ asset('uploads/781959855880540736logo-4.png') }} alt="logo">
+              <div class="cp_logo_wrapper nw_main_logo">
+                <a href="https://focustrade.us/user/dashboard">
+                    <img class="new_dsh_logo new_dsh_desktop_logo" src={{ asset('uploads/main-logo-new.jpeg') }} alt="logo">
+                    <img class="new_dsh_logo new_dsh_mob_logo" src={{ asset('uploads/main-logo-new.jpg') }} alt="logo">
                 </a>
             </div>
             <!-- mobile menu area start -->
-            <header class="mobail_menu d-block d-sm-block d-md-block d-lg-none d-xl-none">
+            <header class="mobail_menu d-block d-sm-block d-md-block d-lg-none d-xl-none over_disp">
                 <div class="container-fluid">
                     <div class="row">				
                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
@@ -269,18 +264,18 @@
                                 </li>
                                 <li><a href="#"><i class="flaticon-purse"></i> My Balance</a>
                                 </li>
-                                <li><a href="#"><i class="flaticon-file"></i> My Task</a>
-                                </li>
-                                <li><a href="#"><i class="flaticon-calendar"></i> My Calender</a>
-                                </li>
-                                <li><a href="#"><i class="flaticon-envelope"></i> Inbox</a>
-                                </li>
+                                <!--<li><a href="#"><i class="flaticon-file"></i> My Task</a>-->
+                                <!--</li>-->
+                                <!--<li><a href="#"><i class="flaticon-calendar"></i> My Calender</a>-->
+                                <!--</li>-->
+                                <!--<li><a href="#"><i class="flaticon-envelope"></i> Inbox</a>-->
+                                <!--</li>-->
                                 <li><a href="#"><i class="flaticon-settings"></i> Setting</a>
                                 </li>
-                                <li><a href="#"><i class="flaticon-help"></i> Help</a>
-                                </li>
-                                <li><a href="#"><i class="flaticon-padlock"></i> Lock Screen</a>
-                                </li>
+                                <!--<li><a href="#"><i class="flaticon-help"></i> Help</a>-->
+                                <!--</li>-->
+                                <!--<li><a href="#"><i class="flaticon-padlock"></i> Lock Screen</a>-->
+                                <!--</li>-->
                                 <li><a href="{{ route('logout') }}"
                            onclick="event.preventDefault();document.getElementById('logout-form').submit();" ><i class="flaticon-turn-off"></i> Logout</a>
                                 
@@ -311,42 +306,39 @@
       <!--                      </ul>-->
       <!--                  </li>     -->
                         <li><a href="#" class="gc_main_navigation">about us</a></li>
-                        <li><a href="#" class="gc_main_navigation">investment plan</a></li>  
-						<li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">pages <i class="fas fa-caret-down"></i></a>
-                            <ul class="navi_2_dropdown">
-                                <li class="parent">
-                                    <a href="#"><i class="fas fa-caret-right"></i>FAQ</a>
-                                </li>
-                                <li class="parent">
-                                    <a href="#"><i class="fas fa-caret-right"></i>login</a>
-                                </li>  
-								<li class="parent">
-                                    <a href="#"><i class="fas fa-caret-right"></i>register</a>
-                                </li>   								
-                            </ul>
-                        </li>
+                        <li><a href="{{ route('investment_plans') }}" class="gc_main_navigation">investment plan</a></li>  
+						<!--<li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">pages <i class="fas fa-caret-down"></i></a>-->
+        <!--                    <ul class="navi_2_dropdown">-->
+        <!--                        <li class="parent">-->
+        <!--                            <a href="#"><i class="fas fa-caret-right"></i>FAQ</a>-->
+        <!--                        </li>-->
+        <!--                        <li class="parent">-->
+        <!--                            <a href="#"><i class="fas fa-caret-right"></i>login</a>-->
+        <!--                        </li>  -->
+								<!--<li class="parent">-->
+        <!--                            <a href="#"><i class="fas fa-caret-right"></i>register</a>-->
+        <!--                        </li>   								-->
+        <!--                    </ul>-->
+      <!--                  </li>-->
 						<li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">dashboard <i class="fas fa-caret-down"></i></a>
                             <ul class="navi_2_dropdown">
                               
                                 <li class="parent">
-                                    <a href="#"><i class="fas fa-caret-right"></i>my account<span><i class="fas fa-caret-right"></i>
+                                    <a href="#"><i class="fas fa-caret-right"></i>view profile<span><i class="fas fa-caret-right"></i>
 									</span></a>
                                     <ul class="dropdown-menu-right">
                                         <li>
-                                            <a href="{{ route('my_account') }}"> <i class="fas fa-caret-right"></i>my account  </a>
-                                        </li>
-                                        <li>
-                                            <a href="#"> <i class="fas fa-caret-right"></i> my profile</a>
+                                            <a href="{{ route('my_account') }}"> <i class="fas fa-caret-right"></i>view profile  </a>
                                         </li>
                                         <li>
                                             <a href="#"><i class="fas fa-caret-right"></i>email notification </a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="fas fa-caret-right"></i>change password</a>
+                                            <a href="{{ route('change_password') }}"><i class="fas fa-caret-right"></i>change password</a>
                                         </li>
-                                        <li>
-                                            <a href="#"><i class="fas fa-caret-right"></i>change pin</a>
-                                        </li>
+                                        <!--<li>-->
+                                        <!--    <a href="#"><i class="fas fa-caret-right"></i>change pin</a>-->
+                                        <!--</li>-->
                                      
                                     </ul>
                                 </li>
@@ -363,9 +355,9 @@
                                         <li>
                                             <a href="{{ route('payment_request') }}"><i class="fas fa-caret-right"></i>payment request</a>
                                         </li>
-                                        <li>
-                                            <a href="#"><i class="fas fa-caret-right"></i>exchange money</a>
-                                        </li>
+                                        <!--<li>-->
+                                        <!--    <a href="#"><i class="fas fa-caret-right"></i>exchange money</a>-->
+                                        <!--</li>-->
                                         <li>
                                             <a href="{{ route('deposit_fund') }}"><i class="fas fa-caret-right"></i>fund transfer</a>
                                         </li>
@@ -379,15 +371,15 @@
                                          <li>
                                             <a href="#"> <i class="fas fa-caret-right"></i>all transactions</a>
                                         </li>
-                                        <li>
-                                            <a href="#"> <i class="fas fa-caret-right"></i> deposit history</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fas fa-caret-right"></i>pending history</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="fas fa-caret-right"></i>exchange history</a>
-                                        </li>
+                                        <!--<li>-->
+                                        <!--    <a href="#"> <i class="fas fa-caret-right"></i> deposit history</a>-->
+                                        <!--</li>-->
+                                        <!--<li>-->
+                                        <!--    <a href="#"><i class="fas fa-caret-right"></i>pending history</a>-->
+                                        <!--</li>-->
+                                        <!--<li>-->
+                                        <!--    <a href="#"><i class="fas fa-caret-right"></i>exchange history</a>-->
+                                        <!--</li>-->
                                         <li>
                                             <a href="#"><i class="fas fa-caret-right"></i>earning history</a>
                                         </li>
@@ -399,10 +391,7 @@
 									</span></a>
                                     <ul class="dropdown-menu-right">
                                          <li>
-                                            <a href="#"> <i class="fas fa-caret-right"></i>my referrals</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"> <i class="fas fa-caret-right"></i> promotionals banners</a>
+                                            <a href="{{ route('levels',\Illuminate\support\Facades\Auth::user()->id) }}"> <i class="fas fa-caret-right"></i>my referrals</a>
                                         </li>
                                         <li>
                                             <a href="#"><i class="fas fa-caret-right"></i>referral earnings</a>
@@ -410,21 +399,19 @@
                                       
                                     </ul>
                                 </li>
-								<li class="parent">
-                                    <a href="#"><i class="fas fa-caret-right"></i>view tickets</a></li>
                             </ul>
                         </li>						
 						    						
-                        <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">blog <i class="fas fa-caret-down"></i></a>
-                            <ul class="navi_2_dropdown">
-                                <li class="parent">
-                                    <a href="#"><i class="fas fa-caret-right"></i>blog category</a>
-                                </li>
-                                <li class="parent">
-                                    <a href="#"><i class="fas fa-caret-right"></i> blog single</a>
-                                </li>                   
-                            </ul>
-                        </li>     
+                        <!--<li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">blog <i class="fas fa-caret-down"></i></a>-->
+                        <!--    <ul class="navi_2_dropdown">-->
+                        <!--        <li class="parent">-->
+                        <!--            <a href="#"><i class="fas fa-caret-right"></i>blog category</a>-->
+                        <!--        </li>-->
+                        <!--        <li class="parent">-->
+                        <!--            <a href="#"><i class="fas fa-caret-right"></i> blog single</a>-->
+                        <!--        </li>                   -->
+                        <!--    </ul>-->
+                        <!--</li>     -->
                         <li><a href="#" class="gc_main_navigation">contact us</a></li>
                     </ul>
                 </div>

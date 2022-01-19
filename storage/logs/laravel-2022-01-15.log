@@ -1,0 +1,337 @@
+[2022-01-15 16:33:13] local.ERROR: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ (SQL: select `value`, `name` from `settings`) (View: F:\xampp\htdocs\focustrade-new\resources\views\auth\login.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ (SQL: select `value`, `name` from `settings`) (View: F:\\xampp\\htdocs\\focustrade-new\esources\\views\\auth\\login.blade.php) at F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:669)
+[stacktrace]
+#0 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(629): Illuminate\\Database\\Connection->runQueryCallback('select `value`,...', Array, Object(Closure))
+#1 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(338): Illuminate\\Database\\Connection->run('select `value`,...', Array, Object(Closure))
+#2 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2159): Illuminate\\Database\\Connection->select('select `value`,...', Array, true)
+#3 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2311): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2619): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2313): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#6 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(696): Illuminate\\Database\\Query\\Builder->pluck('value', 'name')
+#7 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(23): Illuminate\\Database\\Eloquent\\Builder->pluck('value', 'name')
+#8 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1622): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'pluck', Array)
+#9 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1634): Illuminate\\Database\\Eloquent\\Model->__call('pluck', Array)
+#10 F:\\xampp\\htdocs\\focustrade-new\esources\\views/auth/login.blade.php(3): Illuminate\\Database\\Eloquent\\Model::__callStatic('pluck', Array)
+#11 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(43): include('F:\\\\xampp\\\\htdocs...')
+#12 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(59): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('F:\\\\xampp\\\\htdocs...', Array)
+#13 F:\\xampp\\htdocs\\focustrade-new\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(36): Illuminate\\View\\Engines\\CompilerEngine->get('F:\\\\xampp\\\\htdocs...', Array)
+#14 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(143): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('F:\\\\xampp\\\\htdocs...', Array)
+#15 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(126): Illuminate\\View\\View->getContents()
+#16 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
+#17 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(42): Illuminate\\View\\View->render()
+#18 F:\\xampp\\htdocs\\focustrade-new\\vendor\\symfony\\http-foundation\\Response.php(205): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#19 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(749): Symfony\\Component\\HttpFoundation\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#20 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(721): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#21 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(681): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#22 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#23 F:\\xampp\\htdocs\\focustrade-new\\app\\Http\\Middleware\\RedirectIfAuthenticated.php(35): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Middleware\\RedirectIfAuthenticated->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(56): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(683): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#39 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(658): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#40 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(624): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#41 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(613): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#42 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(170): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#43 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#44 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(63): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#52 F:\\xampp\\htdocs\\focustrade-new\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#53 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#56 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#57 F:\\xampp\\htdocs\\focustrade-new\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#58 F:\\xampp\\htdocs\\focustrade-new\\server.php(21): require_once('F:\\\\xampp\\\\htdocs...')
+#59 {main}
+
+[previous exception] [object] (Illuminate\\Database\\QueryException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ (SQL: select `value`, `name` from `settings`) at F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:669)
+[stacktrace]
+#0 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(629): Illuminate\\Database\\Connection->runQueryCallback('select `value`,...', Array, Object(Closure))
+#1 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(338): Illuminate\\Database\\Connection->run('select `value`,...', Array, Object(Closure))
+#2 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2159): Illuminate\\Database\\Connection->select('select `value`,...', Array, true)
+#3 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2311): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2619): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2313): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#6 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(696): Illuminate\\Database\\Query\\Builder->pluck('value', 'name')
+#7 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(23): Illuminate\\Database\\Eloquent\\Builder->pluck('value', 'name')
+#8 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1622): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'pluck', Array)
+#9 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1634): Illuminate\\Database\\Eloquent\\Model->__call('pluck', Array)
+#10 F:\\xampp\\htdocs\\focustrade-new\\storage\\framework\\views\\bd213bd64615bc0812ba7007114b8407f404a9a5.php(2): Illuminate\\Database\\Eloquent\\Model::__callStatic('pluck', Array)
+#11 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(43): include('F:\\\\xampp\\\\htdocs...')
+#12 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(59): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('F:\\\\xampp\\\\htdocs...', Array)
+#13 F:\\xampp\\htdocs\\focustrade-new\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(36): Illuminate\\View\\Engines\\CompilerEngine->get('F:\\\\xampp\\\\htdocs...', Array)
+#14 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(143): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('F:\\\\xampp\\\\htdocs...', Array)
+#15 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(126): Illuminate\\View\\View->getContents()
+#16 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
+#17 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(42): Illuminate\\View\\View->render()
+#18 F:\\xampp\\htdocs\\focustrade-new\\vendor\\symfony\\http-foundation\\Response.php(205): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#19 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(749): Symfony\\Component\\HttpFoundation\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#20 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(721): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#21 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(681): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#22 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#23 F:\\xampp\\htdocs\\focustrade-new\\app\\Http\\Middleware\\RedirectIfAuthenticated.php(35): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Middleware\\RedirectIfAuthenticated->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(56): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(683): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#39 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(658): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#40 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(624): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#41 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(613): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#42 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(170): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#43 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#44 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(63): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#52 F:\\xampp\\htdocs\\focustrade-new\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#53 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#56 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#57 F:\\xampp\\htdocs\\focustrade-new\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#58 F:\\xampp\\htdocs\\focustrade-new\\server.php(21): require_once('F:\\\\xampp\\\\htdocs...')
+#59 {main}
+
+[previous exception] [object] (PDOException(code: 2002): SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ at F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:70)
+[stacktrace]
+#0 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(70): PDO->__construct('mysql:host=127....', 'root', '', Array)
+#1 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'root', '', Array)
+#2 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(182): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(924): call_user_func(Object(Closure))
+#6 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(959): Illuminate\\Database\\Connection->getPdo()
+#7 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(404): Illuminate\\Database\\Connection->getReadPdo()
+#8 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(330): Illuminate\\Database\\Connection->getPdoForSelect(true)
+#9 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(662): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select `value`,...', Array)
+#10 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(629): Illuminate\\Database\\Connection->runQueryCallback('select `value`,...', Array, Object(Closure))
+#11 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(338): Illuminate\\Database\\Connection->run('select `value`,...', Array, Object(Closure))
+#12 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2159): Illuminate\\Database\\Connection->select('select `value`,...', Array, true)
+#13 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2311): Illuminate\\Database\\Query\\Builder->runSelect()
+#14 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2619): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#15 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2313): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#16 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(696): Illuminate\\Database\\Query\\Builder->pluck('value', 'name')
+#17 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\ForwardsCalls.php(23): Illuminate\\Database\\Eloquent\\Builder->pluck('value', 'name')
+#18 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1622): Illuminate\\Database\\Eloquent\\Model->forwardCallTo(Object(Illuminate\\Database\\Eloquent\\Builder), 'pluck', Array)
+#19 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1634): Illuminate\\Database\\Eloquent\\Model->__call('pluck', Array)
+#20 F:\\xampp\\htdocs\\focustrade-new\\storage\\framework\\views\\bd213bd64615bc0812ba7007114b8407f404a9a5.php(2): Illuminate\\Database\\Eloquent\\Model::__callStatic('pluck', Array)
+#21 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(43): include('F:\\\\xampp\\\\htdocs...')
+#22 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(59): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('F:\\\\xampp\\\\htdocs...', Array)
+#23 F:\\xampp\\htdocs\\focustrade-new\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(36): Illuminate\\View\\Engines\\CompilerEngine->get('F:\\\\xampp\\\\htdocs...', Array)
+#24 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(143): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('F:\\\\xampp\\\\htdocs...', Array)
+#25 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(126): Illuminate\\View\\View->getContents()
+#26 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
+#27 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(42): Illuminate\\View\\View->render()
+#28 F:\\xampp\\htdocs\\focustrade-new\\vendor\\symfony\\http-foundation\\Response.php(205): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#29 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(749): Symfony\\Component\\HttpFoundation\\Response->__construct(Object(Illuminate\\View\\View), 200, Array)
+#30 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(721): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#31 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(681): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#32 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#33 F:\\xampp\\htdocs\\focustrade-new\\app\\Http\\Middleware\\RedirectIfAuthenticated.php(35): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): App\\Http\\Middleware\\RedirectIfAuthenticated->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(78): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(56): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(683): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#49 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(658): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#50 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(624): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#51 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(613): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#52 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(170): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#53 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(130): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#54 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#56 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#57 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#58 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#59 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#60 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(63): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#61 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#62 F:\\xampp\\htdocs\\focustrade-new\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#63 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(171): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#64 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(105): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#65 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#66 F:\\xampp\\htdocs\\focustrade-new\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#67 F:\\xampp\\htdocs\\focustrade-new\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#68 F:\\xampp\\htdocs\\focustrade-new\\server.php(21): require_once('F:\\\\xampp\\\\htdocs...')
+#69 {main}
+"} 
+[2022-01-15 16:34:57] local.DEBUG: Message-ID: <3daee47e2f09d04732a61354051fafbb@127.0.0.1>
+Date: Sat, 15 Jan 2022 16:34:57 +0000
+Subject: Verify Email Address
+From: Admin <haroondtwos@gmail.com>
+To: user5@domain.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_1642264497_ce28b890c4f956bf5db8de7a272c0ca0_=_"
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box; background-color: #f8fafc; color: #74787e; height: 100%; hyphens: auto; line-height: 1.4; margin: 0; -moz-hyphens: auto; -ms-word-break: break-all; width: 100% !important; -webkit-hyphens: auto; -webkit-text-size-adjust: none; word-break: break-word;">
+<style>
+@media  only screen and (max-width: 600px) {
+.inner-body {
+width: 100% !important;
+}
+
+.footer {
+width: 100% !important;
+}
+}
+
+@media  only screen and (max-width: 500px) {
+.button {
+width: 100% !important;
+}
+}
+</style>
+
+<table class="wrapper" width="100%" cellpadding="0" cellspacing="0" role="presentation" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box; background-color: #f8fafc; margin: 0; padding: 0; width: 100%; -premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%;">
+<tr>
+<td align="center" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box;">
+<table class="content" width="100%" cellpadding="0" cellspacing="0" role="presentation" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box; margin: 0; padding: 0; width: 100%; -premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%;">
+<tr>
+<td class="header" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box; padding: 25px 0; text-align: center;">
+<a href="http://localhost:313/" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box; color: #bbbfc3; font-size: 19px; font-weight: bold; text-decoration: none; text-shadow: 0 1px 0 white;">
+Admin Panel
+</a>
+</td>
+</tr>
+
+<!-- Email Body -->
+<tr>
+<td class="body" width="100%" cellpadding="0" cellspacing="0" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box; background-color: #ffffff; border-bottom: 1px solid #edeff2; border-top: 1px solid #edeff2; margin: 0; padding: 0; width: 100%; -premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%;">
+<table class="inner-body" align="center" width="570" cellpadding="0" cellspacing="0" role="presentation" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box; background-color: #ffffff; margin: 0 auto; padding: 0; width: 570px; -premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 570px;">
+<!-- Body content -->
+<tr>
+<td class="content-cell" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box; padding: 35px;">
+<h1 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box; color: #3d4852; font-size: 19px; font-weight: bold; margin-top: 0; text-align: left;">Hello!</h1>
+<p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box; color: #3d4852; font-size: 16px; line-height: 1.5em; margin-top: 0; text-align: left;">Please click the button below to verify your email address.</p>
+<table class="action" align="center" width="100%" cellpadding="0" cellspacing="0" role="presentation" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box; margin: 30px auto; padding: 0; text-align: center; width: 100%; -premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%;">
+<tr>
+<td align="center" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box;">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box;">
+<tr>
+<td align="center" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box;">
+<tr>
+<td style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box;">
+<a href="http://localhost:8000/email/verify/5006/5ab2b74efca7283a3378c75bed6e40cc4e419d83?expires=1642268094&amp;signature=75e9b7e21248e51bba99e38bb75ff74933805bf9bf78d5fc3fbc632fc2e5a523" class="button button-primary" target="_blank" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box; border-radius: 3px; box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16); color: #fff; display: inline-block; text-decoration: none; -webkit-text-size-adjust: none; background-color: #3490dc; border-top: 10px solid #3490dc; border-right: 18px solid #3490dc; border-bottom: 10px solid #3490dc; border-left: 18px solid #3490dc;">Verify Email Address</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box; color: #3d4852; font-size: 16px; line-height: 1.5em; margin-top: 0; text-align: left;">If you did not create an account, no further action is required.</p>
+<p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box; color: #3d4852; font-size: 16px; line-height: 1.5em; margin-top: 0; text-align: left;">Regards,<br>
+Admin Panel</p>
+
+
+<table class="subcopy" width="100%" cellpadding="0" cellspacing="0" role="presentation" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box; border-top: 1px solid #edeff2; margin-top: 25px; padding-top: 25px;">
+<tr>
+<td style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box;">
+<p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box; color: #3d4852; line-height: 1.5em; margin-top: 0; text-align: left; font-size: 12px;">If you’re having trouble clicking the "Verify Email Address" button, copy and paste the URL below
+into your web browser: <span class="break-all" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box; word-break: break-all;"><a href="http://localhost:8000/email/verify/5006/5ab2b74efca7283a3378c75bed6e40cc4e419d83?expires=1642268094&amp;signature=75e9b7e21248e51bba99e38bb75ff74933805bf9bf78d5fc3fbc632fc2e5a523" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box; color: #3869d4;">http://localhost:8000/email/verify/5006/5ab2b74efca7283a3378c75bed6e40cc4e419d83?expires=1642268094&amp;signature=75e9b7e21248e51bba99e38bb75ff74933805bf9bf78d5fc3fbc632fc2e5a523</a></span></p>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box;">
+<table class="footer" align="center" width="570" cellpadding="0" cellspacing="0" role="presentation" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box; margin: 0 auto; padding: 0; text-align: center; width: 570px; -premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 570px;">
+<tr>
+<td class="content-cell" align="center" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box; padding: 35px;">
+<p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; box-sizing: border-box; line-height: 1.5em; margin-top: 0; color: #aeaeae; font-size: 12px; text-align: center;">© 2022 Admin Panel. All rights reserved.</p>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+[Admin Panel](http://localhost:313/)
+
+# Hello!
+
+Please click the button below to verify your email address.
+
+Verify Email Address: http://localhost:8000/email/verify/5006/5ab2b74efca7283a3378c75bed6e40cc4e419d83?expires=1642268094&signature=75e9b7e21248e51bba99e38bb75ff74933805bf9bf78d5fc3fbc632fc2e5a523
+
+If you did not create an account, no further action is required.
+
+Regards,
+Admin Panel
+
+If you’re having trouble clicking the "Verify Email Address" button, copy and paste the URL below
+into your web browser: [http://localhost:8000/email/verify/5006/5ab2b74efca7283a3378c75bed6e40cc4e419d83?expires=1642268094&signature=75e9b7e21248e51bba99e38bb75ff74933805bf9bf78d5fc3fbc632fc2e5a523](http://localhost:8000/email/verify/5006/5ab2b74efca7283a3378c75bed6e40cc4e419d83?expires=1642268094&signature=75e9b7e21248e51bba99e38bb75ff74933805bf9bf78d5fc3fbc632fc2e5a523)
+
+© 2022 Admin Panel. All rights reserved.
+  

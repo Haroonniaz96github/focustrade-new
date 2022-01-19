@@ -6,13 +6,11 @@
                         <li class="crm_navi_icon">
                             <div class="c-menu__item__inner"><a href="my_account.html"><i class="flaticon-four-grid-layout-design-interface-symbol"></i></a>
                                 <ul class="crm_hover_menu">
-                                    <li><a href="{{ route('my_account') }}"><i class="fa fa-circle"></i> my account</a>
+                                    <li><a href="{{ route('my_account') }}"><i class="fa fa-circle"></i>view profile</a>
                                     </li>
-                                    <li><a href="#"><i class="fa fa-circle"></i> my profile</a>
-                                    </li>                      
                                     <li><a href="#"><i class="fa fa-circle"></i>email notification</a>
                                     </li>
-                                    <li><a href="#"><i class="fa fa-circle"></i>change password</a>
+                                    <li><a href="{{ route('change_password') }}"><i class="fa fa-circle"></i>change password</a>
                                     </li>
 									  <li><a href="#"><i class="fa fa-circle"></i>change pin</a>
                                     </li>
@@ -25,13 +23,11 @@
                                 </div>
                             </a>
                             <ul>
-                                 <li><a href="{{ route('my_account') }}"><i class="fa fa-circle"></i> my account</a>
+                                 <li><a href="{{ route('my_account') }}"><i class="fa fa-circle"></i> view profile</a>
                                  </li>
-                                 <li><a href="#"><i class="fa fa-circle"></i> my profile</a>
-                                 </li>                      
                                  <li><a href="#"><i class="fa fa-circle"></i>email notification</a>
                                  </li>
-                                 <li><a href="#"><i class="fa fa-circle"></i>change password</a>
+                                 <li><a href="{{ route('change_password') }}"><i class="fa fa-circle"></i>change password</a>
                                  </li>
 								<li><a href="#"><i class="fa fa-circle"></i>change pin</a>
                                  </li>
@@ -49,7 +45,7 @@
                                         <a href="#"> <i class="fa fa-circle"></i> deposit lists</a>
                                     </li>
                                     <li>
-                                        <a href="#"> <i class="fa fa-circle"></i> payment request</a>
+                                        <a href="{{ route('payment_request') }}"> <i class="fa fa-circle"></i> payment request</a>
                                     </li>
                                     <li>
                                         <a href="e#"> <i class="fa fa-circle"></i>exchange money</a>
@@ -67,23 +63,34 @@
                             </a>
                             <ul>
                                  <li>
-                                        <a href="{{ route('my_account') }}"> <i class="fa fa-circle"></i>make deposit</a>
+                                        <a href="{{ route('deposit_fund') }}"> <i class="fa fa-circle"></i>make deposit</a>
                                     </li>
                                     <li>
                                         <a href="#"> <i class="fa fa-circle"></i> deposit lists</a>
                                     </li>
                                     <li>
-                                        <a href="#"> <i class="fa fa-circle"></i> payment request</a>
+                                        <a href="{{ route('payment_request') }}"> <i class="fa fa-circle"></i> payment request</a>
                                     </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-circle"></i>exchange money</a>
-                                    </li>
+                                    <!--<li>-->
+                                    <!--    <a href="#"> <i class="fa fa-circle"></i>exchange money</a>-->
+                                    <!--</li>-->
                                     <li>
                                         <a href="#"> <i class="fa fa-circle"></i>fund transfer</a>
                                     </li>
                             </ul>
                         </li>
                     </ul>
+                    <ul class="u-list crm_drop_second_ul">
+                        <li class="crm_navi_icon">
+                            <div class="c-menu__item__inner"><a href=""><i class="flaticon-progress-report"></i></a>
+                            </div>
+                        </li>
+                        <li class="c-menu__item crm_navi_icon_cont">
+                            <a href="{{ route('investment_plans') }}">
+                                <div class="c-menu-item__title">Investment Plan</div>
+                            </a>
+                        </li>
+                    </ul> 
                     <ul class="u-list crm_drop_second_ul">
                         <li class="crm_navi_icon">
                             <div class="c-menu__item__inner"><a href="#"><i class="flaticon-progress-report"></i></a>
@@ -101,11 +108,11 @@
                                 <ul class="crm_hover_menu">
                                     <li><a href="#"><i class="fa fa-circle"></i> all transactions</a>
                                     </li>
-                                    <li><a href="#"><i class="fa fa-circle"></i>deposit history</a>
-                                    </li>
-									 <li><a href="#"><i class="fa fa-circle"></i>pending history</a>
-                                    </li>
-									 <li><a href="#"><i class="fa fa-circle"></i>exchange history</a>
+          <!--                          <li><a href="#"><i class="fa fa-circle"></i>deposit history</a>-->
+          <!--                          </li>-->
+									 <!--<li><a href="#"><i class="fa fa-circle"></i>pending history</a>-->
+          <!--                          </li>-->
+									 <!--<li><a href="#"><i class="fa fa-circle"></i>exchange history</a>-->
                                     </li>
 									 <li><a href="#"><i class="fa fa-circle"></i>earning history</a>
                                     </li>
@@ -120,36 +127,33 @@
                             <ul>
                               <li><a href="#"><i class="fa fa-circle"></i> all transactions</a>
                                     </li>
-                                    <li><a href="#"><i class="fa fa-circle"></i>deposit history</a>
-                                    </li>
-									 <li><a href="#"><i class="fa fa-circle"></i>pending history</a>
-                                    </li>
-									 <li><a href="#"><i class="fa fa-circle"></i>exchange history</a>
+          <!--                          <li><a href="#"><i class="fa fa-circle"></i>deposit history</a>-->
+          <!--                          </li>-->
+									 <!--<li><a href="#"><i class="fa fa-circle"></i>pending history</a>-->
+          <!--                          </li>-->
+									 <!--<li><a href="#"><i class="fa fa-circle"></i>exchange history</a>-->
                                     </li>
 									 <li><a href="#"><i class="fa fa-circle"></i>earning history</a>
                                     </li>
                             </ul>
                         </li>
                     </ul>
-                    <ul class="u-list crm_drop_second_ul">
-                        <li class="crm_navi_icon">
-                            <div class="c-menu__item__inner"><a href="#"><i class="flaticon-file"></i></a>
-                            </div>
-                        </li>
-                        <li class="c-menu__item crm_navi_icon_cont">
-                            <a href="#">
-                                <div class="c-menu-item__title">view tickets</div>
-                            </a>
-                        </li>
-                    </ul>
+                    <!--<ul class="u-list crm_drop_second_ul">-->
+                    <!--    <li class="crm_navi_icon">-->
+                    <!--        <div class="c-menu__item__inner"><a href="#"><i class="flaticon-file"></i></a>-->
+                    <!--        </div>-->
+                    <!--    </li>-->
+                    <!--    <li class="c-menu__item crm_navi_icon_cont">-->
+                    <!--        <a href="#">-->
+                    <!--            <div class="c-menu-item__title">view tickets</div>-->
+                    <!--        </a>-->
+                    <!--    </li>-->
+                    <!--</ul>-->
                     <ul class="u-list crm_drop_second_ul">
                         <li class="crm_navi_icon">
                             <div class="c-menu__item__inner"><a href="#"><i class="flaticon-settings"></i></a>
                                 <ul class="crm_hover_menu">
-                                    <li><a href="#"><i class="fa fa-circle"></i> my referrals </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> <i class="fa fa-circle"></i>promotionals banners</a>
+                                    <li><a href="{{ route('levels',\Illuminate\support\Facades\Auth::user()->id) }}"><i class="fa fa-circle"></i> my referrals </a>
                                     </li>
 									 <li>
                                         <a href="#"> <i class="fa fa-circle"></i>referral earnings</a>
@@ -163,10 +167,7 @@
                                 </div>
                             </a>
                             <ul>
-                                <li><a href="#"><i class="fa fa-circle"></i> my referrals </a>
-                                </li>
-                                <li>
-                                  <a href="#"> <i class="fa fa-circle"></i>promotionals banners</a>
+                                <li><a href="{{ route('levels',\Illuminate\support\Facades\Auth::user()->id) }}"><i class="fa fa-circle"></i> my referrals </a>
                                 </li>
 								<li>
                                   <a href="#"> <i class="fa fa-circle"></i>referral earnings</a>

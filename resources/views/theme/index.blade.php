@@ -88,8 +88,8 @@ The trader buys the EUR/USD at 1.2500 and purchases $5,000 worth of currency. La
 
             <div class="row">
 
-                <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/why-us.jpg");' data-aos="zoom-in" data-aos-delay="100">
-                    <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+                <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("public/front_end/assets/img/why-us.jpg");' data-aos="zoom-in" data-aos-delay="100">
+                    <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" target="_blank" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
                 </div>
 
                 <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
@@ -153,50 +153,50 @@ The trader buys the EUR/USD at 1.2500 and purchases $5,000 worth of currency. La
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                     <div class="icon-box">
                         <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                        <h4><a href="">Lorem Ipsum</a></h4>
-                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                        <h4><a href="#">FX Trade Signals</a></h4>
+                        <p>Amp up your trading with real-time trade signals and analysis tool Trading Central.</p>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
                     <div class="icon-box">
                         <div class="icon"><i class="bx bx-file"></i></div>
-                        <h4><a href="">Sed ut perspiciatis</a></h4>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                        <h4><a href="#">Market Strategist</a></h4>
+                        <p>Trained market strategists can work with you on developing a trading plan.</p>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
                     <div class="icon-box">
                         <div class="icon"><i class="bx bx-tachometer"></i></div>
-                        <h4><a href="">Magni Dolores</a></h4>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                        <h4><a href="#">Market Analysis</a></h4>
+                        <p>Stay informed with real-time market insights and actionable trade ideas from our research team.</p>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bx-world"></i></div>
-                        <h4><a href="">Nemo Enim</a></h4>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-                    </div>
-                </div>
+                <!--<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">-->
+                <!--    <div class="icon-box">-->
+                <!--        <div class="icon"><i class="bx bx-world"></i></div>-->
+                <!--        <h4><a href="">Nemo Enim</a></h4>-->
+                <!--        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>-->
+                <!--    </div>-->
+                <!--</div>-->
 
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bx-slideshow"></i></div>
-                        <h4><a href="">Dele cardo</a></h4>
-                        <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-                    </div>
-                </div>
+                <!--<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">-->
+                <!--    <div class="icon-box">-->
+                <!--        <div class="icon"><i class="bx bx-slideshow"></i></div>-->
+                <!--        <h4><a href="">Dele cardo</a></h4>-->
+                <!--        <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>-->
+                <!--    </div>-->
+                <!--</div>-->
 
-                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bx bx-arch"></i></div>
-                        <h4><a href="">Divera don</a></h4>
-                        <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-                    </div>
-                </div>
+                <!--<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">-->
+                <!--    <div class="icon-box">-->
+                <!--        <div class="icon"><i class="bx bx-arch"></i></div>-->
+                <!--        <h4><a href="">Divera don</a></h4>-->
+                <!--        <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>-->
+                <!--    </div>-->
+                <!--</div>-->
 
             </div>
 
@@ -218,7 +218,7 @@ The trader buys the EUR/USD at 1.2500 and purchases $5,000 worth of currency. La
                     <div class="swiper-slide">
                         <div class="testimonial-wrap">
                             <div class="testimonial-item">
-                                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                                <img src="public/front_end/assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
                                 <h3>Saul Goodman</h3>
                                 <h4>Ceo &amp; Founder</h4>
                                 <p>
@@ -233,7 +233,7 @@ The trader buys the EUR/USD at 1.2500 and purchases $5,000 worth of currency. La
                     <div class="swiper-slide">
                         <div class="testimonial-wrap">
                             <div class="testimonial-item">
-                                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                                <img src="public/front_end/assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
                                 <h3>Sara Wilsson</h3>
                                 <h4>Designer</h4>
                                 <p>
@@ -248,7 +248,7 @@ The trader buys the EUR/USD at 1.2500 and purchases $5,000 worth of currency. La
                     <div class="swiper-slide">
                         <div class="testimonial-wrap">
                             <div class="testimonial-item">
-                                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                                <img src="public/front_end/assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
                                 <h3>Jena Karlis</h3>
                                 <h4>Store Owner</h4>
                                 <p>
@@ -263,7 +263,7 @@ The trader buys the EUR/USD at 1.2500 and purchases $5,000 worth of currency. La
                     <div class="swiper-slide">
                         <div class="testimonial-wrap">
                             <div class="testimonial-item">
-                                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                                <img src="public/front_end/assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
                                 <h3>Matt Brandon</h3>
                                 <h4>Freelancer</h4>
                                 <p>
@@ -278,7 +278,7 @@ The trader buys the EUR/USD at 1.2500 and purchases $5,000 worth of currency. La
                     <div class="swiper-slide">
                         <div class="testimonial-wrap">
                             <div class="testimonial-item">
-                                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                                <img src="public/front_end/assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
                                 <h3>John Larson</h3>
                                 <h4>Entrepreneur</h4>
                                 <p>
@@ -333,7 +333,7 @@ The trader buys the EUR/USD at 1.2500 and purchases $5,000 worth of currency. La
     <!--        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">-->
 
     <!--            <div class="col-lg-4 col-md-6 portfolio-item filter-app">-->
-    <!--                <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">-->
+    <!--                <img src="public/front_end/assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">-->
     <!--                <div class="portfolio-info">-->
     <!--                    <h4>App 1</h4>-->
     <!--                    <p>App</p>-->
@@ -343,7 +343,7 @@ The trader buys the EUR/USD at 1.2500 and purchases $5,000 worth of currency. La
     <!--            </div>-->
 
     <!--            <div class="col-lg-4 col-md-6 portfolio-item filter-web">-->
-    <!--                <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">-->
+    <!--                <img src="public/front_end/assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">-->
     <!--                <div class="portfolio-info">-->
     <!--                    <h4>Web 3</h4>-->
     <!--                    <p>Web</p>-->
@@ -353,7 +353,7 @@ The trader buys the EUR/USD at 1.2500 and purchases $5,000 worth of currency. La
     <!--            </div>-->
 
     <!--            <div class="col-lg-4 col-md-6 portfolio-item filter-app">-->
-    <!--                <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">-->
+    <!--                <img src="public/front_end/assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">-->
     <!--                <div class="portfolio-info">-->
     <!--                    <h4>App 2</h4>-->
     <!--                    <p>App</p>-->
@@ -363,7 +363,7 @@ The trader buys the EUR/USD at 1.2500 and purchases $5,000 worth of currency. La
     <!--            </div>-->
 
     <!--            <div class="col-lg-4 col-md-6 portfolio-item filter-card">-->
-    <!--                <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">-->
+    <!--                <img src="public/front_end/assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">-->
     <!--                <div class="portfolio-info">-->
     <!--                    <h4>Card 2</h4>-->
     <!--                    <p>Card</p>-->
@@ -373,7 +373,7 @@ The trader buys the EUR/USD at 1.2500 and purchases $5,000 worth of currency. La
     <!--            </div>-->
 
     <!--            <div class="col-lg-4 col-md-6 portfolio-item filter-web">-->
-    <!--                <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">-->
+    <!--                <img src="public/front_end/assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">-->
     <!--                <div class="portfolio-info">-->
     <!--                    <h4>Web 2</h4>-->
     <!--                    <p>Web</p>-->
@@ -383,7 +383,7 @@ The trader buys the EUR/USD at 1.2500 and purchases $5,000 worth of currency. La
     <!--            </div>-->
 
     <!--            <div class="col-lg-4 col-md-6 portfolio-item filter-app">-->
-    <!--                <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">-->
+    <!--                <img src="public/front_end/assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">-->
     <!--                <div class="portfolio-info">-->
     <!--                    <h4>App 3</h4>-->
     <!--                    <p>App</p>-->
@@ -393,7 +393,7 @@ The trader buys the EUR/USD at 1.2500 and purchases $5,000 worth of currency. La
     <!--            </div>-->
 
     <!--            <div class="col-lg-4 col-md-6 portfolio-item filter-card">-->
-    <!--                <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">-->
+    <!--                <img src="public/front_end/assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">-->
     <!--                <div class="portfolio-info">-->
     <!--                    <h4>Card 1</h4>-->
     <!--                    <p>Card</p>-->
@@ -403,7 +403,7 @@ The trader buys the EUR/USD at 1.2500 and purchases $5,000 worth of currency. La
     <!--            </div>-->
 
     <!--            <div class="col-lg-4 col-md-6 portfolio-item filter-card">-->
-    <!--                <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">-->
+    <!--                <img src="public/front_end/assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">-->
     <!--                <div class="portfolio-info">-->
     <!--                    <h4>Card 3</h4>-->
     <!--                    <p>Card</p>-->
@@ -413,7 +413,7 @@ The trader buys the EUR/USD at 1.2500 and purchases $5,000 worth of currency. La
     <!--            </div>-->
 
     <!--            <div class="col-lg-4 col-md-6 portfolio-item filter-web">-->
-    <!--                <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">-->
+    <!--                <img src="public/front_end/assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">-->
     <!--                <div class="portfolio-info">-->
     <!--                    <h4>Web 3</h4>-->
     <!--                    <p>Web</p>-->
@@ -440,7 +440,7 @@ The trader buys the EUR/USD at 1.2500 and purchases $5,000 worth of currency. La
 
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="member" data-aos="zoom-in" data-aos-delay="100">
-                        <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                        <img src="public/front_end/assets/img/team/team-1.jpg" class="img-fluid" alt="">
                         <div class="member-info">
                             <div class="member-info-content">
                                 <h4>Walter White</h4>
@@ -458,7 +458,7 @@ The trader buys the EUR/USD at 1.2500 and purchases $5,000 worth of currency. La
 
                 <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.1s">
                     <div class="member" data-aos="zoom-in" data-aos-delay="200">
-                        <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                        <img src="public/front_end/assets/img/team/team-2.jpg" class="img-fluid" alt="">
                         <div class="member-info">
                             <div class="member-info-content">
                                 <h4>Sarah Jhonson</h4>
@@ -476,7 +476,7 @@ The trader buys the EUR/USD at 1.2500 and purchases $5,000 worth of currency. La
 
                 <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.2s">
                     <div class="member" data-aos="zoom-in" data-aos-delay="300">
-                        <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                        <img src="public/front_end/assets/img/team/team-3.jpg" class="img-fluid" alt="">
                         <div class="member-info">
                             <div class="member-info-content">
                                 <h4>William Anderson</h4>
@@ -494,7 +494,7 @@ The trader buys the EUR/USD at 1.2500 and purchases $5,000 worth of currency. La
 
                 <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.3s">
                     <div class="member" data-aos="zoom-in" data-aos-delay="400">
-                        <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                        <img src="public/front_end/assets/img/team/team-4.jpg" class="img-fluid" alt="">
                         <div class="member-info">
                             <div class="member-info-content">
                                 <h4>Amanda Jepson</h4>
@@ -516,184 +516,241 @@ The trader buys the EUR/USD at 1.2500 and purchases $5,000 worth of currency. La
     </section><!-- End Team Section -->
 
     <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
-        <div class="container" data-aos="fade-up">
+    <!--<section id="pricing" class="pricing">-->
+    <!--    <div class="container" data-aos="fade-up">-->
 
-            <div class="section-title">
-                <h2>Plans</h2>
-                <p>See our Investment Plans</p>
-                <span>Profit including your principal amount is upto <span style="font-size:32px;color:#ed502e"> 3x </span></span>
-            </div>
+    <!--        <div class="section-title">-->
+    <!--            <h2>Plans</h2>-->
+    <!--            <p>See our Investment Plans</p>-->
+    <!--            <span>Profit including your principal amount is upto <span style="font-size:32px;color:#ed502e"> 3x </span></span>-->
+    <!--        </div>-->
 
-            <div class="row align-items-center">
+    <!--        <div class="row align-items-center">-->
 
-                <div class="col-lg-4">
-                    <div class="box" data-aos="zoom-in" data-aos-delay="100">
-                        <h3>Sapphire</h3>
-                        <h4>$100 - $499<span>minimum - maximum</span></h4>
+    <!--            <div class="col-lg-4">-->
+    <!--                <div class="box" data-aos="zoom-in" data-aos-delay="100">-->
+    <!--                    <h3>Sapphire</h3>-->
+    <!--                    <h4>$100 - $499<span>minimum - maximum</span></h4>-->
                         
-                        <ul>
-                            <li><i class="bx bx-check"></i> Per month profit 7-12%</li>
-                            <li><i class="bx bx-check"></i> Expected 6 month profit $335</li>
-                            <li><i class="bx bx-check"></i> Expected 12 month profit $670</li>
-                            <li><i class="bx bx-check"></i> Expected 18 month profit $1005</li>
+    <!--                    <ul>-->
+    <!--                        <li><i class="bx bx-check"></i> Per month profit 7-12%</li>-->
+    <!--                        <li><i class="bx bx-check"></i> Expected 6 month profit $335</li>-->
+    <!--                        <li><i class="bx bx-check"></i> Expected 12 month profit $670</li>-->
+    <!--                        <li><i class="bx bx-check"></i> Expected 18 month profit $1005</li>-->
                             
-                        </ul>
-                        <a href="#" class="get-started-btn">Get Started</a>
-                    </div>
-                </div>
+    <!--                    </ul>-->
+    <!--                    <a href="#" class="get-started-btn">Get Started</a>-->
+    <!--                </div>-->
+    <!--            </div>-->
 
-                <div class="col-lg-4">
-                    <div class="box featured" data-aos="zoom-in" data-aos-delay="100">
-                        <h3>Tanzanite</h3>
-                        <h4>$500 - $1499<span>minimum - maximum</span></h4>
+    <!--            <div class="col-lg-4">-->
+    <!--                <div class="box featured" data-aos="zoom-in" data-aos-delay="100">-->
+    <!--                    <h3>Tanzanite</h3>-->
+    <!--                    <h4>$500 - $1499<span>minimum - maximum</span></h4>-->
                         
-                        <ul>
-                            <li><i class="bx bx-check"></i> Per month profit 7-12%</li>
-                            <li><i class="bx bx-check"></i> Expected 6 month profit $1007</li>
-                            <li><i class="bx bx-check"></i> Expected 12 month profit $2014</li>
-                            <li><i class="bx bx-check"></i> Expected 18 month profit $3021</li>
-                        </ul>
-                        <a href="#" class="get-started-btn">Get Started</a>
-                    </div>
-                </div>
+    <!--                    <ul>-->
+    <!--                        <li><i class="bx bx-check"></i> Per month profit 7-12%</li>-->
+    <!--                        <li><i class="bx bx-check"></i> Expected 6 month profit $1007</li>-->
+    <!--                        <li><i class="bx bx-check"></i> Expected 12 month profit $2014</li>-->
+    <!--                        <li><i class="bx bx-check"></i> Expected 18 month profit $3021</li>-->
+    <!--                    </ul>-->
+    <!--                    <a href="#" class="get-started-btn">Get Started</a>-->
+    <!--                </div>-->
+    <!--            </div>-->
 
-                <div class="col-lg-4">
-                    <div class="box" data-aos="zoom-in" data-aos-delay="100">
-                        <h3>White Pearl</h3>
-                        <h4>$1500 - $2999<span>minimum - maximum</span></h4>
+    <!--            <div class="col-lg-4">-->
+    <!--                <div class="box" data-aos="zoom-in" data-aos-delay="100">-->
+    <!--                    <h3>White Pearl</h3>-->
+    <!--                    <h4>$1500 - $2999<span>minimum - maximum</span></h4>-->
                        
-                        <ul>
-                            <li><i class="bx bx-check"></i> Per month profit 7-12%</li>
-                            <li><i class="bx bx-check"></i> Expected 6 month profit $2015</li>
-                            <li><i class="bx bx-check"></i> Expected 12 month profit $4030</li>
-                            <li><i class="bx bx-check"></i> Expected 18 month profit $6045</li>
-                        </ul>
-                        <a href="#" class="get-started-btn">Get Started</a>
-                    </div>
-                </div>
+    <!--                    <ul>-->
+    <!--                        <li><i class="bx bx-check"></i> Per month profit 7-12%</li>-->
+    <!--                        <li><i class="bx bx-check"></i> Expected 6 month profit $2015</li>-->
+    <!--                        <li><i class="bx bx-check"></i> Expected 12 month profit $4030</li>-->
+    <!--                        <li><i class="bx bx-check"></i> Expected 18 month profit $6045</li>-->
+    <!--                    </ul>-->
+    <!--                    <a href="#" class="get-started-btn">Get Started</a>-->
+    <!--                </div>-->
+    <!--            </div>-->
                 
-                <div class="col-lg-4">
-                    <div class="box" data-aos="zoom-in" data-aos-delay="100">
-                        <h3>Emerald</h3>
-                        <h4>$3000 - $5999<span>minimum - maximum</span></h4>
+    <!--            <div class="col-lg-4">-->
+    <!--                <div class="box" data-aos="zoom-in" data-aos-delay="100">-->
+    <!--                    <h3>Emerald</h3>-->
+    <!--                    <h4>$3000 - $5999<span>minimum - maximum</span></h4>-->
                         
-                        <ul>
-                            <li><i class="bx bx-check"></i> Per month profit 7-12%</li>
-                            <li><i class="bx bx-check"></i> Expected 6 month profit $4031</li>
-                            <li><i class="bx bx-check"></i> Expected 12 month profit $8062</li>
-                            <li><i class="bx bx-check"></i> Expected 18 month profit $12093</li>
-                        </ul>
-                        <a href="#" class="get-started-btn">Get Started</a>
-                    </div>
-                </div>
+    <!--                    <ul>-->
+    <!--                        <li><i class="bx bx-check"></i> Per month profit 7-12%</li>-->
+    <!--                        <li><i class="bx bx-check"></i> Expected 6 month profit $4031</li>-->
+    <!--                        <li><i class="bx bx-check"></i> Expected 12 month profit $8062</li>-->
+    <!--                        <li><i class="bx bx-check"></i> Expected 18 month profit $12093</li>-->
+    <!--                    </ul>-->
+    <!--                    <a href="#" class="get-started-btn">Get Started</a>-->
+    <!--                </div>-->
+    <!--            </div>-->
                 
-                <div class="col-lg-4">
-                    <div class="box featured" data-aos="zoom-in" data-aos-delay="100">
-                        <h3>Ruby</h3>
-                        <h4>$6000 - $9999<span>minimum - maximum</span></h4>
+    <!--            <div class="col-lg-4">-->
+    <!--                <div class="box featured" data-aos="zoom-in" data-aos-delay="100">-->
+    <!--                    <h3>Ruby</h3>-->
+    <!--                    <h4>$6000 - $9999<span>minimum - maximum</span></h4>-->
                         
-                        <ul>
-                            <li><i class="bx bx-check"></i> Per month profit 7-12%</li>
-                            <li><i class="bx bx-check"></i> Exp. 6 month profit $6719</li>
-                            <li><i class="bx bx-check"></i> Exp. 12 month profit $13438</li>
-                            <li><i class="bx bx-check"></i> Exp. 18 month profit $20157</li>
-                        </ul>
-                        <a href="#" class="get-started-btn">Get Started</a>
-                    </div>
-                </div>
+    <!--                    <ul>-->
+    <!--                        <li><i class="bx bx-check"></i> Per month profit 7-12%</li>-->
+    <!--                        <li><i class="bx bx-check"></i> Exp. 6 month profit $6719</li>-->
+    <!--                        <li><i class="bx bx-check"></i> Exp. 12 month profit $13438</li>-->
+    <!--                        <li><i class="bx bx-check"></i> Exp. 18 month profit $20157</li>-->
+    <!--                    </ul>-->
+    <!--                    <a href="#" class="get-started-btn">Get Started</a>-->
+    <!--                </div>-->
+    <!--            </div>-->
                 
-                <div class="col-lg-4">
-                    <div class="box" data-aos="zoom-in" data-aos-delay="100">
-                        <h3>White Diamond</h3>
-                        <h4>$10000 - $25000<span>minimum - maximum</span></h4>
+    <!--            <div class="col-lg-4">-->
+    <!--                <div class="box" data-aos="zoom-in" data-aos-delay="100">-->
+    <!--                    <h3>White Diamond</h3>-->
+    <!--                    <h4>$10000 - $25000<span>minimum - maximum</span></h4>-->
                         
-                        <ul>
-                            <li><i class="bx bx-check"></i> Per month profit 7-12%</li>
-                            <li><i class="bx bx-check"></i> Expected 6 month profit $16800</li>
-                            <li><i class="bx bx-check"></i> Expected 12 month profit $33600</li>
-                            <li><i class="bx bx-check"></i> Expected 18 month profit $50400</li>
-                        </ul>
-                        <a href="#" class="get-started-btn">Get Started</a>
-                    </div>
-                </div>
+    <!--                    <ul>-->
+    <!--                        <li><i class="bx bx-check"></i> Per month profit 7-12%</li>-->
+    <!--                        <li><i class="bx bx-check"></i> Expected 6 month profit $16800</li>-->
+    <!--                        <li><i class="bx bx-check"></i> Expected 12 month profit $33600</li>-->
+    <!--                        <li><i class="bx bx-check"></i> Expected 18 month profit $50400</li>-->
+    <!--                    </ul>-->
+    <!--                    <a href="#" class="get-started-btn">Get Started</a>-->
+    <!--                </div>-->
+    <!--            </div>-->
 
-            </div>
+    <!--        </div>-->
 
-        </div>
-    </section><!-- End Pricing Section -->
+    <!--    </div>-->
+    <!--</section><!-- End Pricing Section -->
     
     <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq">
+    <!--<section id="faq" class="faq">-->
+    <!--    <div class="container" data-aos="fade-up">-->
+
+    <!--        <div class="section-title">-->
+    <!--            <h2>F.A.Q</h2>-->
+    <!--            <p>Frequently Asked Questions</p>-->
+    <!--        </div>-->
+
+    <!--        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">-->
+    <!--            <div class="col-lg-5">-->
+    <!--                <i class="bx bx-help-circle"></i>-->
+    <!--                <h4>Non consectetur a erat nam at lectus urna duis?</h4>-->
+    <!--            </div>-->
+    <!--            <div class="col-lg-7">-->
+    <!--                <p>-->
+    <!--                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.-->
+    <!--                </p>-->
+    <!--            </div>-->
+    <!--        </div>-->
+
+    <!--        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">-->
+    <!--            <div class="col-lg-5">-->
+    <!--                <i class="bx bx-help-circle"></i>-->
+    <!--                <h4>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h4>-->
+    <!--            </div>-->
+    <!--            <div class="col-lg-7">-->
+    <!--                <p>-->
+    <!--                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.-->
+    <!--                </p>-->
+    <!--            </div>-->
+    <!--        </div>-->
+
+    <!--        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">-->
+    <!--            <div class="col-lg-5">-->
+    <!--                <i class="bx bx-help-circle"></i>-->
+    <!--                <h4>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?</h4>-->
+    <!--            </div>-->
+    <!--            <div class="col-lg-7">-->
+    <!--                <p>-->
+    <!--                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus.-->
+    <!--                </p>-->
+    <!--            </div>-->
+    <!--        </div>-->
+
+    <!--        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">-->
+    <!--            <div class="col-lg-5">-->
+    <!--                <i class="bx bx-help-circle"></i>-->
+    <!--                <h4>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h4>-->
+    <!--            </div>-->
+    <!--            <div class="col-lg-7">-->
+    <!--                <p>-->
+    <!--                    Aperiam itaque sit optio et deleniti eos nihil quidem cumque. Voluptas dolorum accusantium sunt sit enim. Provident consequuntur quam aut reiciendis qui rerum dolorem sit odio. Repellat assumenda soluta sunt pariatur error doloribus fuga.-->
+    <!--                </p>-->
+    <!--            </div>-->
+    <!--        </div>-->
+
+    <!--        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">-->
+    <!--            <div class="col-lg-5">-->
+    <!--                <i class="bx bx-help-circle"></i>-->
+    <!--                <h4>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h4>-->
+    <!--            </div>-->
+    <!--            <div class="col-lg-7">-->
+    <!--                <p>-->
+    <!--                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in-->
+    <!--                </p>-->
+    <!--            </div>-->
+    <!--        </div>-->
+
+    <!--    </div>-->
+    <!--</section>-->
+    
+    <!-- ======= New Section ======= -->
+    
+    <section class="new_hm_sec">
         <div class="container" data-aos="fade-up">
-
             <div class="section-title">
-                <h2>F.A.Q</h2>
-                <p>Frequently Asked Questions</p>
+                <h2>Our</h2>
+                <p>Charts</p>
             </div>
-
-            <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-                <div class="col-lg-5">
-                    <i class="bx bx-help-circle"></i>
-                    <h4>Non consectetur a erat nam at lectus urna duis?</h4>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12">
+                    <div class="chart_main">
+                        <div class="chart_img">
+                            <img src="public/front_end/assets/img/chart-1.jpeg">
+                        </div>
+                        <div class="chart_para">
+                            <p>A forex chart is a price chart showing the historical price and volume data on one or more currency pairs. A forex chart, thus, graphically depicts the historical behavior of a currency across various time frames, along with technical patterns & indicators and overlays.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-7">
-                    <p>
-                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                    </p>
+                <div class="col-xl-6 col-lg-6 col-md-12">
+                    <div class="chart_main">
+                        <div class="chart_img">
+                            <img src="public/front_end/assets/img/chart-2.jpeg">
+                        </div>
+                        <div class="chart_para">
+                            <p>Interactive charts that use technical overlays and tools can be made using your broker's online toolkit. Forex-specific platforms and charting software can also be used by more advanced traders in need of greater functionality.</p>
+                        </div>
+                    </div>
                 </div>
-            </div><!-- End F.A.Q Item-->
-
-            <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                <div class="col-lg-5">
-                    <i class="bx bx-help-circle"></i>
-                    <h4>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h4>
+                <div class="col-xl-6 col-lg-6 col-md-12">
+                    <div class="chart_main">
+                        <div class="chart_img">
+                            <img src="public/front_end/assets/img/chart-3.jpeg">
+                        </div>
+                        <div class="chart_para">
+                            <p>It visualizes the trading activity that takes place during a single trading period (whether it’s 10 minutes, 4 hours, one day, or one week).</p>
+                            <p>Any financial asset with price data over a period of time can be used to form a chart for analysis</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-7">
-                    <p>
-                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
-                    </p>
+                <div class="col-xl-6 col-lg-6 col-md-12">
+                    <div class="chart_main">
+                        <div class="chart_img">
+                            <img src="public/front_end/assets/img/chart-4.jpeg">
+                        </div>
+                        <div class="chart_para">
+                            <p>Forex charts also tell you exchange rate levels the market previously reversed to the upside at and below which buyers tend to place bids. These are known as support levels, since the market finds support there when attempting to head lower.</p>
+                        </div>
+                    </div>
                 </div>
-            </div><!-- End F.A.Q Item-->
-
-            <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-                <div class="col-lg-5">
-                    <i class="bx bx-help-circle"></i>
-                    <h4>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?</h4>
-                </div>
-                <div class="col-lg-7">
-                    <p>
-                        Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus.
-                    </p>
-                </div>
-            </div><!-- End F.A.Q Item-->
-
-            <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-                <div class="col-lg-5">
-                    <i class="bx bx-help-circle"></i>
-                    <h4>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h4>
-                </div>
-                <div class="col-lg-7">
-                    <p>
-                        Aperiam itaque sit optio et deleniti eos nihil quidem cumque. Voluptas dolorum accusantium sunt sit enim. Provident consequuntur quam aut reiciendis qui rerum dolorem sit odio. Repellat assumenda soluta sunt pariatur error doloribus fuga.
-                    </p>
-                </div>
-            </div><!-- End F.A.Q Item-->
-
-            <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
-                <div class="col-lg-5">
-                    <i class="bx bx-help-circle"></i>
-                    <h4>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h4>
-                </div>
-                <div class="col-lg-7">
-                    <p>
-                        Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-                    </p>
-                </div>
-            </div><!-- End F.A.Q Item-->
-
+            </div>
         </div>
-    </section><!-- End Frequently Asked Questions Section -->
+    </section>
+    
+    <!-- ======= New Section End ======= -->
+    
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact section-bg">
@@ -720,7 +777,7 @@ The trader buys the EUR/USD at 1.2500 and purchases $5,000 worth of currency. La
                             <div class="info-box mt-4">
                                 <i class="bx bx-envelope"></i>
                                 <h3>Email Us</h3>
-                                <p>info@example.com<br>contact@example.com</p>
+                                <p>Focustrade64@gmail.com</p>
                             </div>
                         </div>
                         <div class="col-md-6">

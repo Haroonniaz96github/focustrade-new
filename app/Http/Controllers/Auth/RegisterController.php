@@ -66,7 +66,7 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
-    protected function create(array $data)
+    /* protected function create(array $data)
     {
         return User::create([
             'sponser_id' => $data['sponser_id'],
@@ -77,6 +77,29 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+    } */
+
+    protected function create(array $data)
+    {
+        $user = User::where('userid', $data['sponser_id'])->first();
+        if ($user != null) {
+            $user = new User();
+            $user->sponser_id = $data['sponser_id'];
+            $user->first_name = $data['first_name'];
+            $user->last_name = $data['last_name'];
+            $user->user_name = $data['user_name'];
+            $user->phone_number = $data['phone_number'];
+            $user->email = $data['email'];
+            $user->password = Hash::make($data['password']);
+            $user->save();
+            $user=User::findorfail($user->id);
+            $user->userid = "FT000".$user->id;
+            $user->save();
+            return $user;
+        } else {
+            Session()->put('error_message', "Sponser Id is not found!.");
+            return new User();
+        }
     }
 
     public function reg() {
