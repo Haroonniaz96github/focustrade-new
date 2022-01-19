@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Bonus;
 use App\CronJob;
 use App\Deposit;
 use App\Http\Controllers\Controller;
@@ -210,6 +211,7 @@ class UsersController extends Controller
         $interest = Interest::where('user_id', $id)->first();
         $package = Package::where('user_id', $id)->first();
         $team = Team::where('user_id', $id)->first();
+        $bonus = Bonus::where('user_id', $id)->first();
 
         return view('admin.users.edit',
             [
@@ -221,6 +223,7 @@ class UsersController extends Controller
                 'interest' => $interest,
                 'package' => $package,
                 'team' => $team,
+                'bonus' => $bonus,
             ]
         );
     }
@@ -378,6 +381,22 @@ class UsersController extends Controller
         $team->user_id = $id;
         $team->save();
         Session::flash('success_message', 'Team updated successfully.');
+        return redirect()->back();
+    }
+
+    public function updateBonus(Request $request, $id)
+    {
+        $bonus = Bonus::where('user_id', $id)->first();
+        if(!$bonus){
+            $bonus =new Bonus();
+        }
+        $bonus->week = $request->input('week');
+        $bonus->total = $request->input('total');
+        $bonus->ranks = $request->input('ranks');
+        $bonus->rewards = $request->input('rewards');
+        $bonus->user_id = $id;
+        $bonus->save();
+        Session::flash('success_message', 'Bonus updated successfully.');
         return redirect()->back();
     }
     /**

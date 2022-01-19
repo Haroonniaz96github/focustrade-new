@@ -57,14 +57,14 @@ Route::group([
     'prefix'        => 'finance',
     'namespace'     => 'Finance'
 ], function ()
-{   
+{
     Route::get('/', [FinanceController::class, 'login'])->name('finance.login');
     Route::get('/login', [FinanceController::class, 'login'])->name('finance.login');
     Route::post('/finance-login', [FinanceController::class, 'loginSubmit'])->name('finance_login');
     Route::get('/dashboard', [FinanceController::class, 'index'])->name('finance.verify_users');
     Route::get('user/{id}', [FinanceController::class, 'viewSingle']);
     Route::Post('/update-user', [FinanceController::class, 'updateUser'])->name('update_user');
-    
+
     Route::get('/finance_logout',function(){
         if(session()->has('user')){
             session()->pull('user');
@@ -143,6 +143,7 @@ Route::group([
     Route::post('users/interest/{id}', [UsersController::class, 'updateInterest'])->name('admin-interest');
     Route::post('users/purchased-package/{id}', [UsersController::class, 'updatePurchasedPackage'])->name('purchased-package');
     Route::post('users/total-team/{id}', [UsersController::class, 'updateTotalTeam'])->name('total-team');
+    Route::post('users/bonuses/{id}', [UsersController::class, 'updateBonus'])->name('bonuses');
 
     //User Routes
     Route::resource('/messages', 'MessageController');

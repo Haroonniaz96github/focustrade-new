@@ -37,11 +37,11 @@
 <body class="fix-header">
 
    <!--preloader Start -->
-    <div id="preloader">
-        <div id="status">
-            <img src="{{ asset('images/loader.gif')}}" id="preloader_image" alt="loader">
-        </div>
-    </div>
+{{--    <div id="preloader">--}}
+{{--        <div id="status">--}}
+{{--            <img src="{{ asset('images/loader.gif')}}" id="preloader_image" alt="loader">--}}
+{{--        </div>--}}
+{{--    </div>--}}
     <div class="cursor"></div>
     <!-- Top Scroll Start -->
     <a href="javascript:" id="return-to-top"> <i class="fa fa-angle-double-up"></i></a>
@@ -310,10 +310,8 @@
                             </a>
                         </div>
                     </div>
-
                     <div class="col-md-6 col-lg-6 col-xl-5 col-sm-6 col-12">
                         <div class="investment_box_wrapper color_5 float_left">
-                            <a href="#">
                                 <div class="investment_icon_wrapper float_left">
                                     <i class="far fa-money-bill-alt"></i>
                                     <h1>Bonuses</h1>
@@ -324,24 +322,23 @@
                                         <tbody>
                                             <tr>
                                                 <td class="new_bx_td">Generation This Week</td>
-                                                <td class="new_bx_td"> : $000.000.000USD</td>
+                                                <td class="new_bx_td"> : @isset($bonus->week){{'$ '.$bonus->week.'.00 USD'}}@endisset</td>
                                             </tr>
                                             <tr>
                                                 <td class="new_bx_td">Total Generation</td>
-                                                <td class="new_bx_td"> : $000.000.000USD</td>
+                                                <td class="new_bx_td"> : @isset($bonus->total){{'$ '.$bonus->total.'.00 USD'}}@endisset</td>
                                             </tr>
                                             <tr>
                                                 <td class="new_bx_td">Ranks</td>
-                                                <td class="new_bx_td"> : $000.000.000USD</td>
+                                                <td class="new_bx_td"> : @isset($bonus->ranks){{'$ '.$bonus->ranks.'.00 USD'}}@endisset</td>
                                             </tr>
                                             <tr>
                                                 <td class="new_bx_td">Rewards</td>
-                                                <td class="new_bx_td"> : $000.000.000USD</td>
+                                                <td class="new_bx_td"> : @isset($bonus->rewards){{'$ '.$bonus->rewards.'.00 USD'}}@endisset</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
-                            </a>
                         </div>
                     </div>
                 </div>
