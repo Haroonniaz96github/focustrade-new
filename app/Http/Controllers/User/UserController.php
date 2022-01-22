@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\User;
 
+use App\Bonus;
 use App\Http\Controllers\Controller;
 use App\Deposit;
 use App\DepositUsdt;
@@ -41,6 +42,7 @@ class UserController extends Controller
         $interest = Interest::where('user_id',$user->id)->first();
         $package= Package::where('user_id',$user->id)->first();
         $team= Team::where('user_id',$user->id)->first();
+        $bonus= Bonus::where('user_id',$user->id)->latest()->first();
 
         return view('user.dashboard.index',
         [
@@ -50,6 +52,7 @@ class UserController extends Controller
             'interest'=>$interest,
             'package'=>$package,
             'team'=>$team,
+            'bonus'=>$bonus,
         ]);
     }
 
@@ -166,6 +169,7 @@ class UserController extends Controller
         $interest = Interest::where('user_id',$user->id)->first();
         $package= Package::where('user_id',$user->id)->first();
         $PaymentRequest= PaymentRequest::where('user_id',$user->id)->latest()->first();
+        $bonus= Bonus::where('user_id',$user->id)->latest()->first();
         return view('user.admin.my_account',
             [
                 'deposit'=>$deposit,
@@ -174,11 +178,12 @@ class UserController extends Controller
                 'interest'=>$interest,
                 'package'=>$package,
                 'PayReq'=>$PaymentRequest,
+                'bonus'=>$bonus,
             ]);
     }
     public function changePassword(){
         return view('user.admin.change_password');
-        
+
     }
      public function updatePassword(Request $request){
         $user = Auth::user();
@@ -195,11 +200,11 @@ class UserController extends Controller
         //$user->save();
         //Session::flash('success_message','Your password has been changed successfully');
         return redirect()->back();
-        
+
     }
     public function investmentPlans(){
         return view('user.admin.investment_plans');
-        
+
     }
     public function depositFund(){
         $user = Auth::user();
@@ -272,7 +277,7 @@ class UserController extends Controller
     }
     public function submitPaymentRequest(Request $request){
         $user = Auth::user()->id;
-        
+
         $this->validate($request, [
             'account_id' => 'required|max:255',
             'network_type' => 'required',
@@ -280,7 +285,7 @@ class UserController extends Controller
         $nt = $request->input('network_type');
         $ac = $request->input('account_id');
         $acc = filter_var($ac, FILTER_SANITIZE_STRING);
-        
+
         DB::insert('INSERT INTO payment_requests (account_id, user_id, network) values (?, ?, ?)', [$acc,$user,$nt]);
         Session::flash('success_message', 'Account information saved successfully!');
         return redirect()->back();
